@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import classnames from 'classnames';
 import { Noto_Sans_TC, Nunito_Sans, Aldrich } from 'next/font/google';
 
