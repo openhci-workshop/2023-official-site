@@ -5,8 +5,8 @@ import { Noto_Sans_TC, Nunito_Sans, Aldrich } from 'next/font/google';
 import styles from './styles.module.scss';
 
 export const metadata = {
-	title: 'Submission | TAICHI 2023',
-	description: 'TAICHI Submission Page',
+	title: 'OPENHCI 2023',
+	description: 'OPENHCI 2023 Temporary Page',
 	keywords: '',
 };
 
