@@ -24,7 +24,7 @@ const aldrich = Aldrich({
 	subsets: ['latin'],
 });
 
-async function fetchSubmissionContent() {
+async function fetchContent() {
 	const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/api/submission`, {
 		next: {
 			revalidate: 60,
@@ -209,8 +209,8 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 	}
 }
 
-const SubmissionPage = async () => {
-	const content = await fetchSubmissionContent();
+const Home = async () => {
+	const content = await fetchContent();
 
 	return (
 		<>
@@ -281,4 +281,4 @@ const SubmissionPage = async () => {
 	);
 };
 
-export default SubmissionPage;
+export default Home;
