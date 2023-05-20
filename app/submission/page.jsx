@@ -25,7 +25,6 @@ const aldrich = Aldrich({
 });
 
 async function fetchSubmissionContent() {
-	console.log("~~~~~~~~~~~~~~~~~~~~~~~showing env var~~~~~~~~~~~~~~~~~~~~~~~", process.env.NEXT_PUBLIC_BASE_FETCH_URL)
 	const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/api/submission`, {
 		next: {
 			revalidate: 60,
@@ -211,7 +210,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 }
 
 const SubmissionPage = async () => {
-	// const content = await fetchSubmissionContent();
+	const content = await fetchSubmissionContent();
 
 	return (
 		<>
@@ -229,7 +228,7 @@ const SubmissionPage = async () => {
 				</h1>
 			</div>
 
-			{/* <div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36">
+			<div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36">
         <section className="mb-14 md:mb-28">
         {content?.slice(0, 2).map(({ title_zh, title_en, blocks }) => (
 						<div
@@ -277,7 +276,7 @@ const SubmissionPage = async () => {
 						</div>
 					))}
 				</section>
-			</div> */}
+			</div>
 		</>
 	);
 };
