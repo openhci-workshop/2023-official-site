@@ -25,7 +25,8 @@ const aldrich = Aldrich({
 });
 
 async function fetchSubmissionContent() {
-	const response = await fetch(`https://openhci-2023.netlify.app/api/submission`, {
+	console.log("~~~~~~~~~~~~~~~~~~~~~~~showing env var~~~~~~~~~~~~~~~~~~~~~~~", process.env.NEXT_PUBLIC_BASE_FETCH_URL)
+	const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/api/submission`, {
 		next: {
 			revalidate: 60,
 		},
