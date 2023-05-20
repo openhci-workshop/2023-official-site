@@ -10,8 +10,8 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 export const metadata = {
-	title: 'TAICHI 2023',
-	description: 'TAICHI Home Page',
+	title: 'OPENHCI 2023',
+	description: 'OPENHCI 2023 Home Page',
 	keywords: '',
 };
 
