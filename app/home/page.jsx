@@ -25,7 +25,7 @@ const aldrich = Aldrich({
 });
 
 async function fetchContent() {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/api/submission`, {
+	const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/api/home`, {
 		next: {
 			revalidate: 60,
 		},
