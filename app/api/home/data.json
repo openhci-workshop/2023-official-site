@@ -1,7 +1,7 @@
 [
 	{
-		"title_zh": "工作坊介紹",
-		"title_en": "Unity",
+		"title_zh": "主題介紹",
+		"title_en": "",
 		"blocks": [
 			{
 				"type": "p",
@@ -17,7 +17,7 @@
 		"title_en": "What is HCI?",
 		"blocks": [
 			{
-				"type": "ul",
+				"type": "p",
 				"level": 1,
 				"content": [
 					"人機互動(Human Computer Interaction,HCI)為橫跨資訊、工程、社會科學、行為科學、藝術設計等跨域學科,過去卅年間對於人機互動相關議題與科技的研發與創新,由國際計算機學會 ACM SIGCHI(Special Interest Group on Computer-Human Interaction)領頭發揮重大影響力,於學術研究與產業實務上都有蓬勃發展。"
@@ -27,7 +27,7 @@
 	},
 	{
 		"title_zh": "關於",
-		"title_en": "OpenHCI",
+		"title_en": "Open HCI",
 		"blocks": [
 			{
 				"type": "p",
@@ -65,13 +65,13 @@
 		]
 	},
 	{
-		"title_zh": "活動時間",
-		"title_en": "Schedule",
+		"title_zh": "日程與地點",
+		"title_en": "Schedule & Venue",
 		"blocks": [
 			{
-				"type": "h3",
+				"type": "h2",
 				"level": 1,
-				"content": ["前置工作坊"]
+				"content": ["/ 活動日程 /"]
 			},
 			{
 				"type": "row",
@@ -80,60 +80,262 @@
 					{
 						"type": "p",
 						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/7/29 (六)"] }]
+						"content": ["前置工作坊", { "type": "date", "level": 1, "content": ["2023/7/29 (六) - 30 (日)"] }]
 					},
 					{
 						"type": "p",
 						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/7/30 (日)"] }]
+						"content": ["正式工作坊", { "type": "date", "level": 1, "content": ["2023/8/10 (四) - 13 (日)"] }]
 					}
 				]
 			},
 			{
-				"type": "h3",
+				"type": "h2",
 				"level": 1,
-				"content": ["正式工作坊"]
+				"content": ["/ 活動地點 /"]
 			},
 			{
-				"type": "row",
+				"type": "p",
+				"level": 1,
+				"content": ["國立台灣大學 學新館 (台北市大安區舟山路10巷1弄4號)"]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 活動費用 /"]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": ["為推廣 HCI 學門，本活動免報名費，僅收取保證金、保險費用及其他費用。 獲得錄取資格之學員，請於指定時間內繳交各項費用，繳費後方能取得正式資格。為維持完整學習體驗，工作坊實行每日簽到，學員需全程參與以獲得保證金全額退還。"]
+			}
+		]
+	},
+	{
+		"title_zh": "報名方式",
+		"title_en": "Registration",
+		"blocks": [
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 報名資格 /"]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": ["全國各大專院校升大三以上在學生，含學碩博應屆畢業生及碩博新生。"]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 報名方式 /"]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": ["一律填寫線上表單報名。本活動以報名資料填寫內容作為錄取參考依據，報名先後順序不列入計分標準。"]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 招生日程 /"]
+			}
+		]
+	},
+	{
+		"title_zh": "報名",
+		"title_en": "",
+		"blocks": [
+			{
+				"type": "h2",
 				"level": 1,
 				"content": [
-					{
-						"type": "p",
-						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/8/3 (四)"] }]
-					},
-					{
-						"type": "p",
-						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/8/6 (日)"] }]
-					}
+					"/ Q : 應屆畢業生可以參加嗎？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"當然可以！只要是全國各大專院校後升大三以上的在學生，含學碩博應屆畢業生都可以參加。"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 活動期間某些時段無法參加，可以請假嗎？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"可以在報名表單中填寫請假時段，但建議全程參與前置與正式工作坊，出席狀況會是我們審核的標準之一。"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 工作坊的時間怎麼安排？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"活動時間分為兩個階段，包含2天的前置工作坊，和4天的正式工作坊。全日活動時間約為 8:30~20:00（視各組討論時間）。"
 				]
 			}
 		]
 	},
 	{
-		"title_zh": "活動地點",
-		"title_en": "Venue",
+		"title_zh": "",
+		"title_en": "ID CARD",
 		"blocks": [
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 什麼是 IDcard 呢？要怎麼寫？ /"
+				]
+			},
 			{
 				"type": "p",
 				"level": 1,
 				"content": [
-					"國立台灣大學 學新館 (台北市大安區舟山路10巷1弄4號)"
+					"IDcard 是籌備團隊認識你的方式，讓籌備團隊更瞭解你的特質、專長以及過去的經歷，以及對此活動選題的看法。別擔心！盡情展現自己就對了！"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : IDcard 的一頁作品集可以放什麼？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"無論你來自什麼背景，請選擇「一」個你最滿意、最喜歡且足以代表你專業能力的作品來進行介紹，而這個作品可以是研究、專題或設計。"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 對 IDcard 第三頁中要回答的內容還是沒什麼想法怎麼辦？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"可以多留意生活周遭的事物與經驗來發想，還有敬請關注粉專發布的選題攻略文！"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : IDcard内作品的相關隱私規範？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"上傳作品集僅供主辦團隊內部審核。"
 				]
 			}
 		]
 	},
 	{
-		"title_zh": "活動費用",
-		"title_en": "Fee",
+		"title_zh": "團隊成員",
+		"title_en": "Organizers",
 		"blocks": [
 			{
-				"type": "p",
+				"type": "h5",
 				"level": 1,
 				"content": [
-					"為推廣 HCI 學門，本活動免報名費，僅收取保證金、保險費用及其他費用。 獲得錄取資格之學員，請於指定時間內繳交各項費用，繳費後方能取得正式資格。為維持完整學習體驗，工作坊實行每日簽到，學員需全程參與以獲得保證金全額退還。"
+					{
+						"type": "h4",
+						"level": 1,
+						"content": ["會議主席 <span>General Chairs</span>"]
+					},
+					"<u><a href=\"https://www.lungpancheng.tw/\">鄭龍磻</a></u> (國立臺灣大學資訊工程學系)",
+					"畢南怡 (國立臺灣大學資訊管理學系)",
+					"詹力韋 (國立陽明交通大學資訊工程學系)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["論文主席 <span>Paper Chairs</span>"] },
+					"游創文 (國立清華大學科技藝術研究所)",
+					"蔡欣叡 (國立政治大學資訊科學系)",
+					"韓秉軒 (國立臺北科技大學互動設計系)",
+					"蔡文傑 (國立臺灣大學創新設計學院)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["海報主席 <span>Poster Chairs</span>"] },
+					"張永儒 (國立陽明交通大學資訊工程學系)",
+					"程芙茵 (國立中正大學資訊工程學系)",
+					"林怡伶 (國立政治大學資訊管理學系)",
+					"彭志宏 (國立臺灣大學資訊管理學系)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["展示主席 <span>Demo Chairs</span>"] },
+					"洪靖雯 (國立台灣大學資訊網路與多媒體研究所)",
+					"王秋玄 (國立陽明交通大學資訊工程學系)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["出版主席 <span>Publication Chair</span>"] },
+					"王浩全 (美國加州大學戴維斯分校資訊工程學系)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["贊助主席 <span>Sponsor Chair</span>"] },
+					"陳書儀 (銘傳大學資訊管理學系)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["宣傳主席 <span>Publicity Chair</span>"] },
+					"侯宗佑 (美國康乃爾大學資訊科學系)"
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [{ "type": "h4", "level": 1, "content": ["網路主席 <span>Web Chair</span>"] }, "OpenHCI"]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{ "type": "h4", "level": 1, "content": ["學生志願者主席 <span>Student Volunteer Chair</span>"] },
+					"OpenHCI"
 				]
 			}
 		]

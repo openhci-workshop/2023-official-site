@@ -33,14 +33,14 @@ function Atom(props) {
       <Electron position={[0, 0, 0.5]} rotation={[0, 0, 0.8]} speed={6} />
       <Electron position={[0, 0, 0.5]} rotation={[0, 0, -0.8]} speed={6} />
       <Electron position={[0, 0, 0.5]} rotation={[0, 0, 1.6]} speed={6} />
-      <ElectronWithSphere radius={5.5} color={0x46DEFF} position={[0, 0, 0.5]} speed={6} />
-      <Electron radius={5.5} color={0x46DEFF} position={[0, 0, 0.5]} rotation={[0, 0, 0.9]} speed={6} />
-      <Electron radius={5.5} color={0x46DEFF} position={[0, 0, 0.5]} rotation={[0, 0, -0.9]} speed={6} />
-      <Electron radius={5.5} color={0x46DEFF} position={[0, 0, 0.5]} rotation={[0, 0, 1.5]} speed={6} />
-      <Electron radius={5} color={0x83FF57} position={[0, 0, 0.5]} speed={6} />
-      <ElectronWithSphere radius={5} color={0x83FF57} position={[0, 0, 0.5]} rotation={[0, 0, 0.8]} speed={6} />
-      <Electron radius={5} color={0x83FF57} position={[0, 0, 0.5]} rotation={[0, 0, -0.8]} speed={6} />
-      <Electron radius={5} color={0x83FF57} position={[0, 0, 0.5]} rotation={[0, 0, 1.6]} speed={6} />
+      <ElectronWithSphere radius={5.5} color={0xF4D03F} position={[0, 0, 0.5]} speed={6} />
+      <Electron radius={5.5} color={0xF4D03F} position={[0, 0, 0.5]} rotation={[0, 0, 0.9]} speed={6} />
+      <Electron radius={5.5} color={0xF4D03F} position={[0, 0, 0.5]} rotation={[0, 0, -0.9]} speed={6} />
+      <Electron radius={5.5} color={0xF4D03F} position={[0, 0, 0.5]} rotation={[0, 0, 1.5]} speed={6} />
+      <Electron radius={5} color={0x01732E} position={[0, 0, 0.5]} speed={6} />
+      <ElectronWithSphere radius={5} color={0x01732E} position={[0, 0, 0.5]} rotation={[0, 0, 0.8]} speed={6} />
+      <Electron radius={5} color={0x01732E} position={[0, 0, 0.5]} rotation={[0, 0, -0.8]} speed={6} />
+      <Electron radius={5} color={0x01732E} position={[0, 0, 0.5]} rotation={[0, 0, 1.6]} speed={6} />
       <Sphere args={[0.55, 64, 64]}>
       <meshBasicMaterial color={[5, 5, 30]} toneMapped={false} />
       </Sphere>
