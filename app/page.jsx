@@ -162,6 +162,22 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 					)}
 				</div>
 			);
+    case 'bold':
+			return (
+				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24 }}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<p
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className="text-xs md:text-lg text-white leading-looser font-bold"
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			);
 		case 'row':
 			return (
 				<div
@@ -182,6 +198,36 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 					{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
 				</div>
 			);
+    case 'grid':
+      return (
+        <div
+          key={`${type}-${idx}`}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-5 mb-1 last:mb-0"
+          style={{ marginLeft: (indentLevel - 1) * 24 }}
+        >
+          {content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+        </div>
+      );
+    case 'name':
+      return (
+        <div
+          key={`${type}-${idx}`}
+          className="flex flex-row lg:flex-col gap-2 items-start"
+          style={{ marginLeft: (indentLevel - 1) * 24 }}
+        >
+          {content?.map(_content => 
+            typeof _content === 'string' ? (
+							<p
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className="text-xs md:text-lg text-white leading-looser font-normal"
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+          )}
+        </div>
+      );
 		case 'date':
 			return (
 				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24 }}>
@@ -367,7 +413,28 @@ const HomePage = async() => {
 				{/* 組織成員 */}
 				<section className="mb-14 md:mb-28" id="組織成員">
 				<SectionTitle titleZh="組織成員" titleEn="" />
-				
+          {content?.slice(8,9).map(({ title_zh, title_en, blocks }) => (
+						<div
+							key={title_en}
+							className={classnames(
+								styles.blockBackdrop,
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
+							)}
+							id={title_en}
+						>
+							<h2
+								className={classnames(
+									notoSansTC.className,
+									'text-white text-2xl md:text-4xl lg:text-5xl mb-4 md:mb-8'
+								)}
+							>
+								{title_zh} <span className={aldrich.className}>{title_en}</span>
+							</h2>
+							<div className="flex flex-col gap-y-5">
+								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
+							</div>
+						</div>
+					))}
 				</section>
 			</div>
 		</>

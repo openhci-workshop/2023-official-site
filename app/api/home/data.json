@@ -240,10 +240,412 @@
 		]
 	},
 	{
-		"title_zh": "組織成員",
-		"title_en": "Organizers",
+		"title_zh": "籌備團隊",
+		"title_en": "",
 		"blocks": [
-			
-		]
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 總召組 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳綵瑄"] }, "台灣大學 工程科學及海洋工程學系"]
+					},
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["周雨欣"] }, "清華大學 藝術與設計學系"]
+					},
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林雨翾"] }, "政治大學 數位內容碩士學位學程"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 財務部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["賀之綸"] }, "台灣大學 會計系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["王景瓏"] }, "中山大學 外國語文/企業管理學系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 網管部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["盧德原"] }, "台灣大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李承修"] }, "政治大學 數位內容碩士學位學程"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林采璇"] }, "中央大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["方宣翔"] }, "成功大學 資訊工程學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張琪"] }, "台灣大學 資訊工程學系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 人資部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["吳佳錦"] }, "政治大學 廣電系/數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["溫詠淳"] }, "清華大學 教育學院學士班"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 公關部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李宣諭"] }, "政治大學 數位內容碩士學位學程"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["邱品蓉"] }, "台灣大學 工商管理學系企業管理組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李亮儀"] }, "陽明交通大學 傳播與科技學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["蔡荃"] }, "清華大學 藝術學院學士班"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 演講部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳育陞"] }, "政治大學 企管系/日文系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["藍于涵"] }, "清華大學 藝術與設計學系設計組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳妍寧"] }, "政治大學 東南亞語言與文化學程"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 行銷部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["楊甯雅"] }, "清華大學 藝術與設計學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張恩愷"] }, "陽明交通大學 傳播與科技學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭朝璣"] }, "台北教育大學 數位科技設計學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["蔡荺翎"] }, "清華大學 科技管理學院學士班"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 視覺部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["戴丞萱"] }, "政治大學 廣告系/數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["周貞宜"] }, "政治大學 地政系/數位內容/日文"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林曉玫"] }, "陽明交通大學 生物科技"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["謝采昕"] }, "政治大學 政治系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["楊芷瑄"] }, "台中教育大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭知耘"] }, "台北市立大學 視覺藝術系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["盧姳儒"] }, "台灣科技大學 設計系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 攝影部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["歐陽德倫"] }, "台灣大學 機械系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳玟亘"] }, "東吳大學 心理系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 設計教學部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["廖國伶"] }, "政治大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭祥維"] }, "臺中教育大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["籃予彤"] }, "台灣大學 政治系國際關係組"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 技術教學部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["秦孝媛"] }, "台灣大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["周知頤"] }, "台灣大學 生醫電資"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["賴詠晴"] }, "台灣大學 資訊工程學系 "]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 設計TA /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["何明明"] }, "台灣大學 心理系工商組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["萬庭容"] }, "台灣藝術大學 視覺傳達設計系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林佳嫺"] }, "台北科技大學 互動設計系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["邢恒馨"] }, "政治大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["郭宛欣"] }, "台灣大學 生物產業傳播暨發展學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["黃彌祐"] }, "台灣藝術大學 多媒體動畫藝術所"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張懿萱"] }, "雲林科技大學 數位媒體設計系互動科技組"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 技術TA /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["郭又嘉"] }, "台灣師範大學 音樂科技跨域合作組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["邱馨論"] }, "中央大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["梁勝傑"] }, "台灣師範大學 圖書資訊學研究所"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳子昂"] }, "台灣大學 資訊工程系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["徐芊綺"] }, "台灣大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["謝辰榆"] }, "台灣大學 工程科學及海洋工程學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭芳雯"] }, "台灣大學 工程科學及海洋工程學系"]
+					}
+				]
+			}
+    ]
 	}
 ]
