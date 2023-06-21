@@ -257,7 +257,7 @@ const HomePage = async() => {
 						"flex flex-col items-around"
 					)}
 				>
-					<Image src={logo} alt="taichi-logo" className="h-auto w-full md:w-4/5 lg:w-3/5 mt-4 mb-8"/>
+					<Image src={logo} alt="logo" className="h-auto w-full md:w-4/5 lg:w-3/5 mt-4 mb-8"/>
 					<h1 className={classnames(notoSansTC.className, 'text-white text-lg md:text-2xl font-semibold mb-8')}>
 						第十三屆台灣人機互動研討會
 					</h1>
@@ -266,7 +266,7 @@ const HomePage = async() => {
 							"flex flex-row space-x-4 md:space-x-8 mb-8 items-start"
 						)
 					}>
-						<Link href="" target="_blank">
+						<Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
 							<Button variant="normal">
 								立即報名
 							</Button>

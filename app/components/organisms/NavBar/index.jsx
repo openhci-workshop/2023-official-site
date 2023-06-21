@@ -69,7 +69,7 @@ const NavBar = () => {
               <Link href="#組織成員">
                 <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>組織成員</div>
               </Link>
-              <Link href="" target="_blank">
+              <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
                 <Button className="md: mx-4">立即報名</Button>
               </Link>
             </nav>
@@ -102,7 +102,7 @@ const NavBar = () => {
           <Link href="#組織成員" onClick={() => {setNavActive(false)}}>
             <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>組織成員</div>
           </Link>
-          <Link href="" target="_blank">
+          <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
             <Button className="">立即報名</Button>
           </Link>
         </div>
