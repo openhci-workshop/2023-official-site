@@ -10,7 +10,8 @@ import { Aldrich } from 'next/font/google';
 import Button from '@/components/atoms/Button';
 
 import styles from './styles.module.scss';
-import Logo from '../../../../public/logo.png';
+import Logo from '../../../../public/logo_hero.png';
+import AltLogo from '../../../../public/tai_logo.png';
 
 const MIN_WIDTH = 970;
 
@@ -40,30 +41,36 @@ const NavBar = () => {
   return (
     <div>
       <div className="flex items-center justify-between px-4 pl-0 fixed top-0 left-0 right-0 h-16 md:h-20 bg-black z-10">
-        <Link href="/">
-          <Image src={Logo} alt="taichi-logo" className="h-12 md:h-16 w-auto" />
-        </Link>
+        <div className="flex flex-row items-center space-x-1">
+          <Link href="/">
+            <Image src={Logo} alt="taichi-logo" className="h-12 md:h-16 w-auto ml-4 mr-2"/>
+          </Link>
+          |
+          <Link href="https://taichi2023.taiwanchi.org/" target="_blank">
+            <Image src={AltLogo} alt="alt-logo" className="h-3 md:h-5 w-auto ml-3" />
+          </Link>
+        </div>
         <div>
         {
           width > MIN_WIDTH ? (
             <nav className="flex flex-row items-center">
-              <Link href="#keynote">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>keynote</div>
+              <Link href="#工作坊介紹">
+                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>工作坊介紹</div>
               </Link>
-              <Link href="#submission">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>submission</div>
+              <Link href="#活動資訊">
+                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>活動資訊</div>
               </Link>
-              <Link href="#registration">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>registration</div>
+              <Link href="#FAQ">
+                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>FAQ</div>
               </Link>
-              <Link href="#award">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>award</div>
+              <Link href="#歷屆作品">
+                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>歷屆作品</div>
               </Link>
-              <Link href="#organizers">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>organizers</div>
+              <Link href="#組織成員">
+                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>組織成員</div>
               </Link>
-              <Link href="https://easychair.org/my/conference?conf=taichi2023" target="_blank">
-                <Button className="md: mx-4">報名參與</Button>
+              <Link href="" target="_blank">
+                <Button className="md: mx-4">立即報名</Button>
               </Link>
             </nav>
           ) : (
@@ -80,26 +87,23 @@ const NavBar = () => {
       </div>
       <div className={navActive ? classnames(styles.navOverlay): classnames(styles.navOverlay_closed)}>
         <div className="flex flex-col gap-y-10 items-center">
-          <Link href="#keynote" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>keynote</div>
+          <Link href="#工作坊介紹" onClick={() => {setNavActive(false)}}>
+            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>工作坊介紹</div>
           </Link>
-          <Link href="#submission" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>submission</div>
+          <Link href="#活動資訊" onClick={() => {setNavActive(false)}}>
+            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>活動資訊</div>
           </Link>
-          <Link href="#registration" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>registration</div>
+          <Link href="#FAQ" onClick={() => {setNavActive(false)}}>
+            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>FAQ</div>
           </Link>
-          <Link href="#agenda" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>agenda</div>
+          <Link href="#歷屆作品" onClick={() => {setNavActive(false)}}>
+            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>歷屆作品</div>
           </Link>
-          <Link href="#award" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>award</div>
+          <Link href="#組織成員" onClick={() => {setNavActive(false)}}>
+            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>組織成員</div>
           </Link>
-          <Link href="#organizers" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>organizers</div>
-          </Link>
-          <Link href="https://easychair.org/my/conference?conf=taichi2023" target="_blank">
-            <Button className="">論文投稿</Button>
+          <Link href="" target="_blank">
+            <Button className="">立即報名</Button>
           </Link>
         </div>
       </div>
