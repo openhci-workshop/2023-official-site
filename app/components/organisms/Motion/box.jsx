@@ -1,11 +1,12 @@
-"use client"
+import { MeshTransmissionMaterial } from '@react-three/drei'
 
-import React from 'react'
-
-const box = () => {
+export default function Box({ config }) {
   return (
-    <div>box</div>
+    <>
+      <mesh>
+        <boxGeometry args={[100, 100, 100]}/>
+        <MeshTransmissionMaterial {...config} color="#FFFFFF" toneMapped={false} />
+      </mesh>
+    </>
   )
 }
-
-export default box

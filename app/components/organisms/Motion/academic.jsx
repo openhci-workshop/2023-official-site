@@ -9,15 +9,17 @@ import { EffectComposer, Bloom } from '@react-three/postprocessing'
 
 export default function Academic() {
   return (
-    <Canvas camera={{ position: [0, 0, 10] }}>
-      <color attach="background" args={['black']} />
+    <>
+      {/* <Canvas camera={{ position: [0, 0, 10] }}>
+      <color attach="background" args={['black']} /> */}
       <Float speed={5} rotationIntensity={1.1} floatIntensity={1.1}>
         <Atom />
       </Float>
-      <EffectComposer>
+      {/* <EffectComposer>
         <Bloom mipmapBlur luminanceThreshold={1} radius={0.7} />
       </EffectComposer>
-    </Canvas>
+    </Canvas> */}
+    </>
   )
 }
 

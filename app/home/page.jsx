@@ -3,7 +3,7 @@ import { Noto_Sans_TC, Nunito_Sans, Aldrich } from 'next/font/google';
 
 import styles from './styles.module.scss';
 
-import Motion from '@/components/organisms/Motion';
+import Motion from '@/components/organisms/Motion-branch';
 
 export const metadata = {
 	title: 'OPENHCI 2023',
