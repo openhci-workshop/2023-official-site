@@ -1,11 +1,20 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import Button from '@/components/atoms/Button';
 import classnames from 'classnames';
 import { Noto_Sans_TC, Nunito_Sans, Aldrich } from 'next/font/google';
 
+import NavBar from '@/components/organisms/NavBar';
+import SectionTitle from '@/components/molecules/SectionTitle';
+import BlockTitle from '@/components/molecules/BlockTitle';
+
+import logo from '../public/logo_hero.png';
+import cube from '../public/open_cube.png';
 import styles from './styles.module.scss';
 
 export const metadata = {
 	title: 'OPENHCI 2023',
-	description: 'OPENHCI 2023 Temporary Page',
+	description: 'OPENHCI 2023 Home Page',
 	keywords: '',
 };
 
@@ -47,7 +56,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-base text-white leading-loose font-light'
+									'text-xs md:text-lg text-white leading-looser font-normal'
 								)}
 							/>
 						) : (
@@ -66,7 +75,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-base text-white leading-loose font-light'
+									'text-xs md:text-lg text-white leading-looser font-normal'
 								)}
 							/>
 						) : (
@@ -104,7 +113,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-base md:text-xl font-semibold leading-8 mb-1'
+									'text-base md:text-3xl font-semibold leading-8 mb-5'
 								)}
 							/>
 						) : (
@@ -123,8 +132,29 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-base font-semibold leading-8'
+									styles.h4,
+									'text-xs md:text-lg text-white leading-none font-black mb-8'
 								)}
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			);
+		case 'h5':
+			return (
+				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24 }}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<h5
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className={classnames(
+									notoSansTC.className,
+									'text-xs md:text-sm text-white font-normal'
+								)}
+								style={{ lineHeight: '2 !important' }}
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -162,7 +192,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									aldrich.className,
-									'text-white font-normal text-xl md:text-3xl lg:text-4xl mb-4'
+									'text-white font-normal text-sm md:text-3xl lg:text-4xl mb-4'
 								)}
 							/>
 						) : (
@@ -179,7 +209,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-base text-white leading-8"
+								className="text-xs md:text-lg text-white leading-looser font-normal"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -214,27 +244,48 @@ const HomePage = async() => {
 
 	return (
 		<>
+			<NavBar />
+
 			<div
 				className={classnames(
-					styles.sectionTitle,
-					'flex item-start md:items-center px-6 md:px-8 lg:px-16 py-8 md:py-0 h-48 md:h-32 w-100'
-				)}
+						styles.heroBackdrop,
+						"flex flex-col md:flex-row items-start px-6 md:px-12 xl:px-32 py-6 md:py-12 md:px-20"
+					)}
 			>
-				<h1 className={classnames(notoSansTC.className, 'text-white text-2xl md:text-5xl font-semibold')}>
-					OPENHCI 2023
-				</h1>
-				<h1 className={classnames(notoSansTC.className, 'text-white text-2xl md:text-5xl font-semibold ml-12')}>
-					8.19-20 TAIPEI
-				</h1>
+				<div
+					className={classnames(
+						"flex flex-col items-around"
+					)}
+				>
+					<Image src={logo} alt="taichi-logo" className="h-auto w-full md:w-4/5 lg:w-3/5 mt-4 mb-8"/>
+					<h1 className={classnames(notoSansTC.className, 'text-white text-lg md:text-2xl font-semibold mb-8')}>
+						第十三屆台灣人機互動研討會
+					</h1>
+					<div className={
+						classnames(
+							"flex flex-row space-x-4 md:space-x-8 mb-8 items-start"
+						)
+					}>
+						<Link href="" target="_blank">
+							<Button variant="normal">
+								立即報名
+							</Button>
+						</Link>
+					</div>
+				</div>
+				<Image src={cube} alt="hero" className="h-auto w-screen md:w-1/2 lg:w-1/3"/>
 			</div>
 
 			<div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36">
-        <section className="mb-14 md:mb-28">
-        {content?.slice(0, 2).map(({ title_zh, title_en, blocks }) => (
+
+				{/* 工作坊介紹 */}
+        <section className="mb-14 md:mb-28" id="工作坊介紹">
+				<SectionTitle titleZh="工作坊介紹" titleEn=""/>
+        {content?.slice(0, 4).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_en}
 							className={classnames(
-								styles.sectionBackdrop,
+								styles.blockBackdrop,
 								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
 							)}
 						>
@@ -252,12 +303,15 @@ const HomePage = async() => {
 						</div>
 					))}
         </section>
-				<section>
-					{content?.slice(2).map(({ title_zh, title_en, blocks }) => (
+
+				{/* 活動資訊 */}
+				<section className="mb-14 md:mb-28" id="活動資訊">
+				<SectionTitle titleZh="活動資訊" titleEn=""/>
+					{content?.slice(4,6).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_en}
 							className={classnames(
-								styles.sectionBackdrop,
+								styles.blockBackdrop,
 								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
 							)}
 							id={title_en}
@@ -275,6 +329,45 @@ const HomePage = async() => {
 							</div>
 						</div>
 					))}
+				</section>
+
+				{/* FAQ */}
+				<section className="mb-14 md:mb-28" id="FAQ">
+				<SectionTitle titleZh="" titleEn="FAQ" />
+					{content?.slice(6,8).map(({ title_zh, title_en, blocks }) => (
+						<div
+							key={title_en}
+							className={classnames(
+								styles.blockBackdrop,
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
+							)}
+							id={title_en}
+						>
+							<h2
+								className={classnames(
+									notoSansTC.className,
+									'text-white text-2xl md:text-4xl lg:text-5xl mb-4 md:mb-8'
+								)}
+							>
+								{title_zh} <span className={aldrich.className}>{title_en}</span>
+							</h2>
+							<div className="flex flex-col gap-y-5">
+								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
+							</div>
+						</div>
+					))}
+				</section>
+
+				{/* 歷屆作品 */}
+				<section className="mb-14 md:mb-28" id="歷屆作品">
+				<SectionTitle titleZh="歷屆作品" titleEn="" />
+
+				</section>
+
+				{/* 組織成員 */}
+				<section className="mb-14 md:mb-28" id="組織成員">
+				<SectionTitle titleZh="組織成員" titleEn="" />
+				
 				</section>
 			</div>
 		</>

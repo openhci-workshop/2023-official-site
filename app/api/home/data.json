@@ -52,19 +52,6 @@
 		]
 	},
 	{
-		"title_zh": "活動宗旨",
-		"title_en": "Purpose",
-		"blocks": [
-			{
-				"type": "p",
-				"level": 1,
-				"content": [
-					"本活動希望以推廣 HCI 為主要宗旨，招收工程、設計及跨領域背景的學生，共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能根據主題體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義，進而尋思更和諧的人機互動遠景。"
-				]
-			}
-		]
-	},
-	{
 		"title_zh": "日程與地點",
 		"title_en": "Schedule & Venue",
 		"blocks": [
@@ -253,91 +240,10 @@
 		]
 	},
 	{
-		"title_zh": "團隊成員",
+		"title_zh": "組織成員",
 		"title_en": "Organizers",
 		"blocks": [
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{
-						"type": "h4",
-						"level": 1,
-						"content": ["會議主席 <span>General Chairs</span>"]
-					},
-					"<u><a href=\"https://www.lungpancheng.tw/\">鄭龍磻</a></u> (國立臺灣大學資訊工程學系)",
-					"畢南怡 (國立臺灣大學資訊管理學系)",
-					"詹力韋 (國立陽明交通大學資訊工程學系)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["論文主席 <span>Paper Chairs</span>"] },
-					"游創文 (國立清華大學科技藝術研究所)",
-					"蔡欣叡 (國立政治大學資訊科學系)",
-					"韓秉軒 (國立臺北科技大學互動設計系)",
-					"蔡文傑 (國立臺灣大學創新設計學院)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["海報主席 <span>Poster Chairs</span>"] },
-					"張永儒 (國立陽明交通大學資訊工程學系)",
-					"程芙茵 (國立中正大學資訊工程學系)",
-					"林怡伶 (國立政治大學資訊管理學系)",
-					"彭志宏 (國立臺灣大學資訊管理學系)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["展示主席 <span>Demo Chairs</span>"] },
-					"洪靖雯 (國立台灣大學資訊網路與多媒體研究所)",
-					"王秋玄 (國立陽明交通大學資訊工程學系)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["出版主席 <span>Publication Chair</span>"] },
-					"王浩全 (美國加州大學戴維斯分校資訊工程學系)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["贊助主席 <span>Sponsor Chair</span>"] },
-					"陳書儀 (銘傳大學資訊管理學系)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["宣傳主席 <span>Publicity Chair</span>"] },
-					"侯宗佑 (美國康乃爾大學資訊科學系)"
-				]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [{ "type": "h4", "level": 1, "content": ["網路主席 <span>Web Chair</span>"] }, "OpenHCI"]
-			},
-			{
-				"type": "h5",
-				"level": 1,
-				"content": [
-					{ "type": "h4", "level": 1, "content": ["學生志願者主席 <span>Student Volunteer Chair</span>"] },
-					"OpenHCI"
-				]
-			}
+			
 		]
 	}
 ]
