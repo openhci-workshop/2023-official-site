@@ -54,19 +54,19 @@ const NavBar = () => {
         {
           width > MIN_WIDTH ? (
             <nav className="flex flex-row items-center">
-              <Link href="#工作坊介紹">
+              <Link href="/#工作坊介紹">
                 <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>工作坊介紹</div>
               </Link>
-              <Link href="#活動資訊">
+              <Link href="/#活動資訊">
                 <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>活動資訊</div>
               </Link>
-              <Link href="#FAQ">
+              <Link href="/#FAQ">
                 <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>FAQ</div>
               </Link>
-              <Link href="#歷屆作品">
+              <Link href="/#歷屆作品">
                 <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>歷屆作品</div>
               </Link>
-              <Link href="#組織成員">
+              <Link href="/#組織成員">
                 <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>組織成員</div>
               </Link>
               <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
@@ -87,19 +87,19 @@ const NavBar = () => {
       </div>
       <div className={navActive ? classnames(styles.navOverlay): classnames(styles.navOverlay_closed)}>
         <div className="flex flex-col gap-y-10 items-center">
-          <Link href="#工作坊介紹" onClick={() => {setNavActive(false)}}>
+          <Link href="/#工作坊介紹" onClick={() => {setNavActive(false)}}>
             <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>工作坊介紹</div>
           </Link>
-          <Link href="#活動資訊" onClick={() => {setNavActive(false)}}>
+          <Link href="/#活動資訊" onClick={() => {setNavActive(false)}}>
             <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>活動資訊</div>
           </Link>
-          <Link href="#FAQ" onClick={() => {setNavActive(false)}}>
+          <Link href="/#FAQ" onClick={() => {setNavActive(false)}}>
             <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>FAQ</div>
           </Link>
-          <Link href="#歷屆作品" onClick={() => {setNavActive(false)}}>
+          <Link href="/#歷屆作品" onClick={() => {setNavActive(false)}}>
             <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>歷屆作品</div>
           </Link>
-          <Link href="#組織成員" onClick={() => {setNavActive(false)}}>
+          <Link href="/#組織成員" onClick={() => {setNavActive(false)}}>
             <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>組織成員</div>
           </Link>
           <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
