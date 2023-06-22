@@ -15,7 +15,7 @@ export const metadata = {
 		'OPENHCI 2023 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
 	keywords: '',
 	openGraph: {
-		title: 'TAICHI 2023',
+		title: 'OPENHCI 2023',
 		description:
 			'OPENHCI 2023',
 		url: process.env.NEXT_PUBLIC_BASE_FETCH_URL,
