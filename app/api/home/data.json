@@ -1,13 +1,13 @@
 [
 	{
-		"title_zh": "工作坊介紹",
-		"title_en": "Unity",
+		"title_zh": "主題介紹",
+		"title_en": "",
 		"blocks": [
 			{
 				"type": "p",
 				"level": 1,
 				"content": [
-					"Unity 既是單元也是紀元,代表著人類與科技如今密不可分的生存形態,正如同本屆TAICHI與Open HCI將攜手合作,期待能打破領域間的界限、專業上的藩籬,讓創新思維與知識經驗聯合加成,透過跨領域及多面向的連結,碰撞出多元的火花,交織成全新的宇宙,迸裂成多面向的可能性,彼此迭代激盪,開啟下一個紀元。"
+					"Unity 既是單元也是紀元，代表著人類與科技如今密不可分的生存形態，正如同本屆 Open HCI 與 <u><a href=\"https://taichi2023.taiwanchi.org\">TAICHI</a></u> 將攜手合作，期待能打破領域間的界限、專業上的藩籬，讓創新思維與知識經驗聯合加成，透過跨領域及多面向的連結，碰撞出多元的火花，交織成全新的宇宙，迸裂成多面向的可能性，彼此迭代激盪，開啟下一個紀元。"
 				]
 			}
 		]
@@ -17,23 +17,23 @@
 		"title_en": "What is HCI?",
 		"blocks": [
 			{
-				"type": "ul",
+				"type": "p",
 				"level": 1,
 				"content": [
-					"人機互動(Human Computer Interaction,HCI)為橫跨資訊、工程、社會科學、行為科學、藝術設計等跨域學科,過去卅年間對於人機互動相關議題與科技的研發與創新,由國際計算機學會 ACM SIGCHI(Special Interest Group on Computer-Human Interaction)領頭發揮重大影響力,於學術研究與產業實務上都有蓬勃發展。"
+					"人機互動 (Human Computer Interaction, HCI) 為橫跨資訊、工程、社會科學、行為科學、藝術設計等跨域學科，過去卅年間對於人機互動相關議題與科技的研發與創新，由國際計算機學會 ACM SIGCHI (Special Interest Group on Computer-Human Interaction) 領頭發揮重大影響力，於學術研究與產業實務上都有蓬勃發展。"
 				]
 			}
 		]
 	},
 	{
 		"title_zh": "關於",
-		"title_en": "OpenHCI",
+		"title_en": "Open HCI",
 		"blocks": [
 			{
 				"type": "p",
 				"level": 1,
 				"content": [
-					"「OpenHCI人機互動工作坊」是由跨台、政、清、陽交、台科、北科等學校的資訊工程與設計領域的學生自主籌備的活動,今年邁向第十三屆。活動宗旨為推廣人機互動學門,以及促進各校學生間的跨領域專案實作。"
+					"「OpenHCI 人機互動工作坊」是由跨台、政、清、陽交、台科、北科等學校的資訊工程與設計領域的學生自主籌備的活動，今年邁向第十三屆。活動宗旨為推廣人機互動學門，以及促進各校學生間的跨領域專案實作。"
 				]
 			}
 		]
@@ -46,32 +46,19 @@
 				"type": "p",
 				"level": 1,
 				"content": [
-					"為深化各個在臺灣進行人機互動相關活動的社群，本活動由OpenHCI與TAICHI共同籌劃並於同地緊接舉辦，TAICHI將邀請本屆工作坊優異作品至會議展示呈現。除了能夠藉此盛會為學員作品爭取曝光度之外，也期望能跟眾多前輩互相交流並汲取經驗，相信對學員未來升學或求職之路都有莫大的助益。"
+					"為深化各個在臺灣進行人機互動相關活動的社群，本活動由 OpenHCI 與 <u><a href=\"https://taichi2023.taiwanchi.org\">TAICHI</a></u> 共同籌劃並於同地緊接舉辦，TAICHI 將邀請本屆工作坊優異作品至會議展示呈現。除了能夠藉此盛會為學員作品爭取曝光度之外，也期望能跟眾多前輩互相交流並汲取經驗，相信對學員未來升學或求職之路都有莫大的助益。"
 				]
 			}
 		]
 	},
 	{
-		"title_zh": "活動宗旨",
-		"title_en": "Purpose",
+		"title_zh": "日程與地點",
+		"title_en": "Schedule & Venue",
 		"blocks": [
 			{
-				"type": "p",
+				"type": "h2",
 				"level": 1,
-				"content": [
-					"本活動希望以推廣 HCI 為主要宗旨，招收工程、設計及跨領域背景的學生，共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能根據主題體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義，進而尋思更和諧的人機互動遠景。"
-				]
-			}
-		]
-	},
-	{
-		"title_zh": "活動時間",
-		"title_en": "Schedule",
-		"blocks": [
-			{
-				"type": "h3",
-				"level": 1,
-				"content": ["前置工作坊"]
+				"content": ["/ 活動日程 /"]
 			},
 			{
 				"type": "row",
@@ -80,62 +67,648 @@
 					{
 						"type": "p",
 						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/7/29 (六)"] }]
+						"content": ["前置工作坊", { "type": "date", "level": 1, "content": ["2023/7/29 (六) - 30 (日)"] }]
 					},
 					{
 						"type": "p",
 						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/7/30 (日)"] }]
+						"content": ["正式工作坊", { "type": "date", "level": 1, "content": ["2023/8/10 (四) - 13 (日)"] }]
 					}
 				]
 			},
 			{
-				"type": "h3",
+				"type": "h2",
 				"level": 1,
-				"content": ["正式工作坊"]
+				"content": ["/ 活動地點 /"]
 			},
 			{
-				"type": "row",
+				"type": "p",
+				"level": 1,
+				"content": ["<u><a href=\"https://goo.gl/maps/USLcTGDcrC4FRhPx9\">國立台灣大學 學新館</a></u> (台北市大安區舟山路10巷1弄4號)"]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 活動費用 /"]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": ["為推廣 HCI 學門，本活動免報名費，僅收取保證金、保險費用及其他費用。 獲得錄取資格之學員，請於指定時間內繳交各項費用，繳費後方能取得正式資格。為維持完整學習體驗，工作坊實行每日簽到，學員需全程參與以獲得保證金全額退還。"]
+			}
+		]
+	},
+	{
+		"title_zh": "報名方式",
+		"title_en": "Registration",
+		"blocks": [
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 報名資格 /"]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": ["全國各大專院校升大三以上在學生，含學碩博應屆畢業生及碩博新生。"]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 報名方式 /"]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": ["一律填寫線上表單報名。本活動以報名資料填寫內容作為錄取參考依據，報名先後順序不列入計分標準。"]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": ["/ 招生日程 /"]
+			},
+			{
+				"type": "timeline",
 				"level": 1,
 				"content": [
 					{
-						"type": "p",
+						"type": "timeline-item",
 						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/8/3 (四)"] }]
+						"content": [
+							{
+								"type": "h2",
+								"level": 1,
+								"content": ["報名開始"]
+							},
+							{ "type": "timeline-dot", "level": 1, "content": [""] },
+							{ "type": "h2", "level": 1, "content": ["2023/6/24"] }
+						]
 					},
 					{
-						"type": "p",
+						"type": "timeline-item",
 						"level": 1,
-						"content": ["", { "type": "date", "level": 1, "content": ["2023/8/6 (日)"] }]
+						"content": [
+							{
+								"type": "h2",
+								"level": 1,
+								"content": ["報名結束"]
+							},
+							{ "type": "timeline-dot", "level": 1, "content": [""] },
+							{ "type": "h2", "level": 1, "content": ["2023/7/01"] }
+						]
+					},
+					{
+						"type": "timeline-item",
+						"level": 1,
+						"content": [
+							{
+								"type": "h2",
+								"level": 1,
+								"content": ["正取名單公佈*"]
+							},
+							{ "type": "timeline-dot", "level": 1, "content": [""] },
+							{ "type": "h2", "level": 1, "content": ["2023/7/10"] }
+						]
+					},
+					{
+						"type": "timeline-item",
+						"level": 1,
+						"content": [
+							{
+								"type": "h2",
+								"level": 1,
+								"content": ["遞補備取通知"]
+							},
+							{ "type": "timeline-dot", "level": 1, "content": [""] },
+							{ "type": "h2", "level": 1, "content": ["2023/7/14"] }
+						]
 					}
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": ["*網路公佈與信件通知"]
+			}
+		]
+	},
+	{
+		"title_zh": "報名",
+		"title_en": "",
+		"blocks": [
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 應屆畢業生可以參加嗎？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"當然可以！只要是全國各大專院校後升大三以上的在學生，含學碩博應屆畢業生都可以參加。"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 活動期間某些時段無法參加，可以請假嗎？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"可以在報名表單中填寫請假時段，但建議全程參與前置與正式工作坊，出席狀況會是我們審核的標準之一。"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 工作坊的時間怎麼安排？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"活動時間分為兩個階段，包含 2 天的前置工作坊，和4天的正式工作坊。全日活動時間約為 8:30 ~ 20:00（視各組討論時間）。"
 				]
 			}
 		]
 	},
 	{
-		"title_zh": "活動地點",
-		"title_en": "Venue",
+		"title_zh": "",
+		"title_en": "ID CARD",
 		"blocks": [
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 什麼是 IDcard 呢？要怎麼寫？ /"
+				]
+			},
 			{
 				"type": "p",
 				"level": 1,
 				"content": [
-					"國立台灣大學 學新館 (台北市大安區舟山路10巷1弄4號)"
+					"IDcard 是籌備團隊認識你的方式，讓籌備團隊更瞭解你的特質、專長以及過去的經歷，以及對此活動選題的看法。別擔心！盡情展現自己就對了！"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : IDcard 的一頁作品集可以放什麼？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"無論你來自什麼背景，請選擇「一」個你最滿意、最喜歡且足以代表你專業能力的作品來進行介紹，而這個作品可以是研究、專題或設計。"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : 對 IDcard 第三頁中要回答的內容還是沒什麼想法怎麼辦？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"可以多留意生活周遭的事物與經驗來發想，還有敬請關注粉專發布的選題攻略文！"
+				]
+			},
+			{
+				"type": "h2",
+				"level": 1,
+				"content": [
+					"/ Q : IDcard 内作品的相關隱私規範？ /"
+				]
+			},
+			{
+				"type": "p",
+				"level": 1,
+				"content": [
+					"上傳作品集僅供主辦團隊內部審核。"
 				]
 			}
 		]
 	},
 	{
-		"title_zh": "活動費用",
-		"title_en": "Fee",
+		"title_zh": "籌備團隊",
+		"title_en": "",
 		"blocks": [
-			{
-				"type": "p",
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 總召 /"]
+      },
+      {
+				"type": "grid",
 				"level": 1,
 				"content": [
-					"為推廣 HCI 學門，本活動免報名費，僅收取保證金、保險費用及其他費用。 獲得錄取資格之學員，請於指定時間內繳交各項費用，繳費後方能取得正式資格。為維持完整學習體驗，工作坊實行每日簽到，學員需全程參與以獲得保證金全額退還。"
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳綵瑄"] }, "台灣大學 工程科學及海洋工程學系"]
+					},
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["周雨欣"] }, "清華大學 藝術與設計學系"]
+					},
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林雨翾"] }, "政治大學 數位內容碩士學位學程"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 財務部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["賀之綸"] }, "台灣大學 會計系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["王景瓏"] }, "中山大學 外國語文/企業管理學系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 網管部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["盧德原"] }, "台灣大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李承修"] }, "政治大學 數位內容碩士學位學程"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林采璇"] }, "中央大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["方宣翔"] }, "成功大學 資訊工程學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張琪"] }, "台灣大學 資訊工程學系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 人資部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["吳佳錦"] }, "政治大學 廣電系/數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["溫詠淳"] }, "清華大學 教育學院學士班"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 公關部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李宣諭"] }, "政治大學 數位內容碩士學位學程"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["邱品蓉"] }, "台灣大學 工商管理學系企業管理組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李亮儀"] }, "陽明交通大學 傳播與科技學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["蔡荃"] }, "清華大學 藝術學院學士班"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 演講部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳育陞"] }, "政治大學 企管系/日文系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["藍于涵"] }, "清華大學 藝術與設計學系設計組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳妍寧"] }, "政治大學 東南亞語言與文化學程"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 行銷部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["楊甯雅"] }, "清華大學 藝術與設計學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張恩愷"] }, "陽明交通大學 傳播與科技學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭朝璣"] }, "台北教育大學 數位科技設計學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["蔡荺翎"] }, "清華大學 科技管理學院學士班"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 視覺部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["戴丞萱"] }, "政治大學 廣告系/數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["周貞宜"] }, "政治大學 地政系/數位內容/日文"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林曉玫"] }, "陽明交通大學 生物科技"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["謝采昕"] }, "政治大學 政治系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["楊芷瑄"] }, "台中教育大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭知耘"] }, "台北市立大學 視覺藝術系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["盧姳儒"] }, "台灣科技大學 設計系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 攝影部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["歐陽德倫"] }, "台灣大學 機械系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳玟亘"] }, "東吳大學 心理系"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 設計教學部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["廖國伶"] }, "政治大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭祥維"] }, "臺中教育大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["籃予彤"] }, "台灣大學 政治系國際關係組"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 技術教學部 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["秦孝媛"] }, "台灣大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["周知頤"] }, "台灣大學 生醫電資"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["賴詠晴"] }, "台灣大學 資訊工程學系 "]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 設計TA /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["何明明"] }, "台灣大學 心理系工商組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["萬庭容"] }, "台灣藝術大學 視覺傳達設計系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林佳嫺"] }, "台北科技大學 互動設計系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["邢恒馨"] }, "政治大學 數位內容"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["郭宛欣"] }, "台灣大學 生物產業傳播暨發展學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["黃彌祐"] }, "台灣藝術大學 多媒體動畫藝術所"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張懿萱"] }, "雲林科技大學 數位媒體設計系互動科技組"]
+					}
+				]
+			},
+      {
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 技術TA /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["郭又嘉"] }, "台灣師範大學 音樂科技跨域合作組"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["邱馨論"] }, "中央大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["梁勝傑"] }, "台灣師範大學 圖書資訊學研究所"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["陳子昂"] }, "台灣大學 資訊工程系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["徐芊綺"] }, "台灣大學 資訊管理學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["謝辰榆"] }, "台灣大學 工程科學及海洋工程學系"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭芳雯"] }, "台灣大學 工程科學及海洋工程學系"]
+					}
 				]
 			}
-		]
+    ]
 	}
 ]
