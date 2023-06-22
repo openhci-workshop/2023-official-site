@@ -12,6 +12,9 @@ import logo from '../public/logo_hero.png';
 import cube from '../public/open_cube.png';
 import styles from './styles.module.scss';
 
+import historywork1 from '../public/history_work1.png';
+import historywork2 from '../public/history_work2.png';
+
 export const metadata = {
 	title: 'OPENHCI 2023',
 	description: 'OPENHCI 2023 Home Page',
@@ -239,7 +242,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 	}
 }
 
-const HomePage = async() => {
+const HomePage = async () => {
 	const content = await fetchContent();
 
 	return (
@@ -248,16 +251,16 @@ const HomePage = async() => {
 
 			<div
 				className={classnames(
-						styles.heroBackdrop,
-						"flex flex-col md:flex-row items-start px-6 md:px-12 xl:px-32 py-6 md:py-12 md:px-20"
-					)}
+					styles.heroBackdrop,
+					"flex flex-col md:flex-row items-start px-6 md:px-12 xl:px-32 py-6 md:py-12 md:px-20"
+				)}
 			>
 				<div
 					className={classnames(
 						"flex flex-col items-around"
 					)}
 				>
-					<Image src={logo} alt="logo" className="h-auto w-full md:w-4/5 lg:w-3/5 mt-4 mb-8"/>
+					<Image src={logo} alt="logo" className="h-auto w-full md:w-4/5 lg:w-3/5 mt-4 mb-8" />
 					<h1 className={classnames(notoSansTC.className, 'text-white text-lg md:text-2xl font-semibold mb-8')}>
 						第十三屆台灣人機互動研討會
 					</h1>
@@ -273,15 +276,15 @@ const HomePage = async() => {
 						</Link>
 					</div>
 				</div>
-				<Image src={cube} alt="hero" className="h-auto w-screen md:w-1/2 lg:w-1/3"/>
+				<Image src={cube} alt="hero" className="h-auto w-screen md:w-1/2 lg:w-1/3" />
 			</div>
 
 			<div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36">
 
 				{/* 工作坊介紹 */}
-        <section className="mb-14 md:mb-28" id="工作坊介紹">
-				<SectionTitle titleZh="工作坊介紹" titleEn=""/>
-        {content?.slice(0, 4).map(({ title_zh, title_en, blocks }) => (
+				<section className="mb-14 md:mb-28" id="工作坊介紹">
+					<SectionTitle titleZh="工作坊介紹" titleEn="" />
+					{content?.slice(0, 4).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_en}
 							className={classnames(
@@ -302,12 +305,12 @@ const HomePage = async() => {
 							</div>
 						</div>
 					))}
-        </section>
+				</section>
 
 				{/* 活動資訊 */}
 				<section className="mb-14 md:mb-28" id="活動資訊">
-				<SectionTitle titleZh="活動資訊" titleEn=""/>
-					{content?.slice(4,6).map(({ title_zh, title_en, blocks }) => (
+					<SectionTitle titleZh="活動資訊" titleEn="" />
+					{content?.slice(4, 6).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_en}
 							className={classnames(
@@ -333,8 +336,8 @@ const HomePage = async() => {
 
 				{/* FAQ */}
 				<section className="mb-14 md:mb-28" id="FAQ">
-				<SectionTitle titleZh="" titleEn="FAQ" />
-					{content?.slice(6,8).map(({ title_zh, title_en, blocks }) => (
+					<SectionTitle titleZh="" titleEn="FAQ" />
+					{content?.slice(6, 8).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_en}
 							className={classnames(
@@ -360,16 +363,78 @@ const HomePage = async() => {
 
 				{/* 歷屆作品 */}
 				<section className="mb-14 md:mb-28" id="歷屆作品">
-				<SectionTitle titleZh="歷屆作品" titleEn="" />
+					<SectionTitle titleZh="歷屆作品" titleEn="" />
+					<div
+						className={classnames(
+							styles.blockBackdrop,
+							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl"
+						)}
+					>
+						<div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
+							<Image src={historywork1} alt="logo" className="h-auto w-full mt-4 mb-8" />
+						</div>
+						<div className="w-full md:w-3/5 flex flex-col justify-center">
+							<a href='https://www.youtube.com/watch?v=KylHCITJITA&list=PL5Zz58VdLY59meXvFQCkwcmEQJJ97QfG2&index=1' target="_blank">
+								<h2
+									className={classnames(
+										notoSansTC.className,
+										"text-white text-2xl md:text-4xl lg:text-4xl mb-4 md:mb-6"
+									)}
+								>
+									<span style={{ boxShadow: "inset 0 -1px 0 #fff" }}>情緒波紋</span>
+								</h2>
+							</a>
+							<p
+								className={classnames(
+									notoSansTC.className,
+									"leading-loose"
+								)}
+							>
+								上班族每天都必須面對龐大的工作壓力，長期容易使人陷入低潮漩渦，造成身心靈影響。「情緒波紋」是一款桌上型互動裝置，透過按壓，將情緒轉化成一幅獨特又錯落有致的情緒波紋。透過觀察自身情緒及掌握長期的情緒變化，有助於心理健康。
+							</p>
+						</div>
+					</div>
 
-				</section>
+
+					<div
+						className={classnames(
+							styles.blockBackdrop,
+							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl"
+						)}
+					>
+						<div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
+							<Image src={historywork2} alt="logo" className="h-auto w-full mt-4 mb-8" />
+						</div>
+						<div className="w-full md:w-3/5 flex flex-col justify-center">
+							<a href='https://www.youtube.com/watch?v=KylHCITJITA&list=PL5Zz58VdLY59meXvFQCkwcmEQJJ97QfG2&index=2' target="_blank">
+								<h2
+									className={classnames(
+										notoSansTC.className,
+										"text-white text-2xl md:text-4xl lg:text-4xl mb-4 md:mb-6"
+									)}
+								>
+									<span style={{ boxShadow: "inset 0 -1px 0 #fff" }}>抒花 Blossom</span>
+								</h2>
+							</a>
+							<p
+								className={classnames(
+									notoSansTC.className,
+									"leading-loose"
+								)}
+							>
+								抒花Blossom，是一款透過心率變化偵測居家工作者當下的壓力指數並將其視覺化，以花朵枯萎與光的變化促使工作者意識到自己的壓力狀態並走出房門曬太陽的互動裝置，讓它重新綻放的同時，也讓居家工作者休息。
+							</p>
+						</div>
+					</div>
+
+				</section >
 
 				{/* 組織成員 */}
-				<section className="mb-14 md:mb-28" id="組織成員">
-				<SectionTitle titleZh="組織成員" titleEn="" />
-				
-				</section>
-			</div>
+				< section className="mb-14 md:mb-28" id="組織成員" >
+					<SectionTitle titleZh="組織成員" titleEn="" />
+
+				</section >
+			</div >
 		</>
 	);
 };
