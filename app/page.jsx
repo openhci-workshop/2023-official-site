@@ -410,6 +410,7 @@ const HomePage = async () => {
 								<h2
 									className={classnames(
 										notoSansTC.className,
+										aldrich.className,
 										"text-white text-2xl md:text-4xl lg:text-4xl mb-4 md:mb-6"
 									)}
 								>
@@ -419,6 +420,7 @@ const HomePage = async () => {
 							<p
 								className={classnames(
 									notoSansTC.className,
+									aldrich.className,
 									"leading-loose"
 								)}
 							>
