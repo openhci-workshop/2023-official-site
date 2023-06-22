@@ -249,15 +249,11 @@ const HomePage = async() => {
 			<div
 				className={classnames(
 						styles.heroBackdrop,
-						"flex flex-col md:flex-row items-start px-6 md:px-12 xl:px-32 py-6 md:py-12 md:px-20"
+						"flex flex-col items-start py-6 md:py-12"
 					)}
 			>
-				<div
-					className={classnames(
-						"flex flex-col items-around"
-					)}
-				>
-					<Image src={logo} alt="logo" className="h-auto w-full md:w-4/5 lg:w-3/5 mt-4 mb-8"/>
+				<div className="container mx-auto px-6 md:px-8">
+					<Image src={logo} alt="logo" className="h-auto w-full md:w-1/2 lg:w-1/3 mt-4 mb-8"/>
 					<h1 className={classnames(notoSansTC.className, 'text-white text-lg md:text-2xl font-semibold mb-8')}>
 						第十三屆台灣人機互動研討會
 					</h1>
@@ -273,7 +269,6 @@ const HomePage = async() => {
 						</Link>
 					</div>
 				</div>
-				<Image src={cube} alt="hero" className="h-auto w-screen md:w-1/2 lg:w-1/3"/>
 			</div>
 
 			<div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36">
@@ -286,7 +281,7 @@ const HomePage = async() => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-4xl'
 							)}
 						>
 							<h2
@@ -312,7 +307,7 @@ const HomePage = async() => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-4xl'
 							)}
 							id={title_en}
 						>
@@ -339,7 +334,7 @@ const HomePage = async() => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-4xl'
 							)}
 							id={title_en}
 						>

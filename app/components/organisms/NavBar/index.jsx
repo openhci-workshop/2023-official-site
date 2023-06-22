@@ -10,7 +10,7 @@ import { Aldrich } from 'next/font/google';
 import Button from '@/components/atoms/Button';
 
 import styles from './styles.module.scss';
-import Logo from '../../../../public/logo_hero.png';
+import Logo from '../../../../public/logo_nav.png';
 import AltLogo from '../../../../public/tai_logo.png';
 
 const MIN_WIDTH = 970;
