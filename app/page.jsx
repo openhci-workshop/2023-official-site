@@ -327,7 +327,7 @@ const HomePage = async () => {
 				<div className="container mx-auto px-6 md:px-8">
 					<Image src={logo} alt="logo" className="h-auto w-full md:w-1/2 lg:w-1/3 mt-4 mb-8"/>
 					<h1 className={classnames(notoSansTC.className, 'text-white text-lg md:text-2xl font-semibold mb-8')}>
-						第十三屆台灣人機互動研討會
+						第十三屆台灣人機互動工作坊
 					</h1>
 					<div className={
 						classnames(
