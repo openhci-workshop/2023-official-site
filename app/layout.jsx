@@ -23,8 +23,8 @@ export const metadata = {
 		images: [
 			{
 				url: `${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/og.png`,
-				width: 1200,
-				height: 630,
+				width: 800,
+				height: 600,
 			},
 		],
 		type: 'website',
