@@ -1,37 +1,162 @@
-.sectionTitle {
-	height: 480px;
-	align-items: center;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 4.58%, rgba(200, 80, 192, 0.445833) 31.91%, #FFCC70 100%);
+@media (max-width: 768px) {
+
+	/* adjust breakpoint as needed */
+	.pb-full {
+		padding-bottom: 100%;
+	}
 }
 
-// .deadlineBackdrop {
-// 	background: rgba(32, 162, 130, 0.15);
-// 	// border: 1px solid;
-// 	// border-image-source: linear-gradient(214.8deg, rgba(32, 162, 130, 0.54) 23.75%, rgba(217, 217, 217, 0) 79.5%);
-// 	border: 1px solid rgba(255, 255, 255, 0.5);
-// }
-
-.sectionBackdrop {
-	/* glass fill */
-	background: linear-gradient(123.15deg, rgba(255, 255, 255, 0.5) 20.99%, rgba(255, 255, 255, 0.15) 79.11%);
-	box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(20px);
+.heroBackdrop {
+	background: linear-gradient(168.65deg, rgba(255, 255, 255, 0.27) -2.45%, rgba(255, 255, 255, 0) 75.41%);
+	backdrop-filter: blur(22.5px);
 	/* Note: backdrop-filter has minimal browser support */
 
-	border-radius: 40px;
+	// border-radius: 8px;
 }
 
-// .sectionBackdrop {
-// 	background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(239, 231, 42, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-// 	background-blend-mode: overlay, normal;
-// 	backdrop-filter: blur(40px);
-// 	/* Note: backdrop-filter has minimal browser support */
+.sectionTitle {
+	// background: linear-gradient(109.22deg, rgba(32, 162, 130, 0.5) 17.48%, rgba(254, 238, 91, 0.5) 79.64%), #000000;
 
-// 	border-radius: 59px;
+	// & > h1 {
+	// 	text-shadow: 0px 0px 28px #3fa978, 0px 2px 2px rgba(0, 0, 0, 0.25);
+	// }
 
-// 	/* Inside auto layout */
+	height: 480px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 4.58%, rgba(16, 117, 97, 0.445833) 31.91%, #F4D03F 100%);
+}
 
-// 	flex: none;
-// 	order: 0;
-// 	flex-grow: 0;
-// }
+.deadlineBackdrop {
+	background: rgba(32, 162, 130, 0.15);
+	// border: 1px solid;
+	// border-image-source: linear-gradient(214.8deg, rgba(32, 162, 130, 0.54) 23.75%, rgba(217, 217, 217, 0) 79.5%);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.paperBackdrop {
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sectionHero {
+	background: linear-gradient(109.22deg,
+			rgba(254, 238, 91, 0.5),
+			rgba(32, 162, 130, 0.5) 15%,
+			rgba(0, 0, 0, 0.25) 75%),
+		#000000 !important;
+	/* Add !important to override any conflicting styles */
+
+	&>h1 {
+		text-shadow: 0px 0px 28px #3fa978, 0px 2px 2px rgba(0, 0, 0, 0.25);
+	}
+}
+
+.blockBackdrop {
+	background: radial-gradient(
+		90.16% 143.01% at 15.32% 21.04%, 
+		rgba(200, 80, 192, 0.2) 0%, 
+		rgba(255, 204, 112, 0.02) 100%
+	);
+	background-blend-mode: overlay, normal;
+	backdrop-filter: blur(40px);
+	border-radius: 50px;
+	@media screen and (max-width: 767px) {
+		border-radius: 30px;
+	}
+
+	&::before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: 50px;
+		padding: 2px;
+		background: radial-gradient(80.69% 208.78% at 108.28% 112.58%, #FFCC70 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(80.38% 222.5% at -13.75% -12.36%, #C850C0 0%, rgba(255, 255, 255, 0) 100%);
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box, 
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+						mask-composite: exclude;
+
+		@media screen and (max-width: 767px) {
+			border-radius: 30px;
+		}
+	}
+}
+
+.customshadow {
+	box-shadow: 0px 0px 20px 2px rgba(254, 238, 91, 0.5);
+}
+
+.h4 {
+	font-size: 26px !important;
+
+	&>span {
+		font-family: 'Aldrich';
+	}
+
+	@media screen and (max-width: 767px) {
+		font-size: 15px !important;
+	}
+}
+
+.organizationWrapper {
+	&>div {
+		@media screen and (min-width: 1024px) {
+			&:nth-child(2n-1):nth-last-of-type(1) {
+				grid-column: span 2;
+			}
+		}
+
+		&>div {
+			position: relative;
+
+			&::before {
+				content: '';
+				width: 7px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: calc(-24px - 7px);
+				background: linear-gradient(180deg,
+						rgba(37, 165, 72, 0) 0%,
+						#25a548 23.7%,
+						#f0df67 55.42%,
+						#cae02c 82.5%,
+						rgba(202, 224, 44, 0) 100%);
+
+				@media screen and (max-width: 767px) {
+					width: 4px;
+					left: calc(-20px - 4px);
+				}
+			}
+		}
+	}
+}
+
+.timeline {
+	width: auto;
+	height: 6px;
+
+	background: linear-gradient(
+		90deg,
+		rgba(250, 193, 119, 0) 1.04%, 
+		rgba(236, 161, 139, 0.51) 19.27%,
+		rgba(223, 132, 158, 0.86) 33.33%, 
+		#D165B2 49.48%, rgba(176, 81, 195, 0.9) 68.23%, 
+		rgba(115, 85, 202, 0.65) 85.42%, 
+		rgba(69, 88, 207, 0) 100%);
+
+	@media screen and (max-width: 767px) {
+		height: auto;
+		width: auto;
+
+		background: transparent;
+	}
+}
+
+.timelineDot {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: #ffffff;
+}
