@@ -283,6 +283,29 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 					)}
 				</div>
 			);
+		case 'timeline':
+			return (
+				<div className="pl-8 md:pl-0 py-0 md:py-16">
+					<div className={classnames(
+						styles.timeline,
+						"flex w-full flex-col md:flex-row justify-center md:justify-between")
+					}>
+						{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+					</div>
+				</div>
+			);
+		case 'timeline-item':
+		return (
+			<div className="flex flex-row-reverse md:flex-col md:space-y-4 items-center md:items-center justify-end md:justify-center py-4 md:py-0">
+				{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+			</div>
+		);
+		case 'timeline-dot':
+			return (
+				// <div className='grow grid items-center justify-center'>
+					<div className={classnames(styles.timelineDot, "mx-4 md:mx-0 text-transparent text-xs")}>.</div>
+				// </div>
+			)
 		default:
 			return null;
 	}
@@ -330,18 +353,11 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-4xl'
+								'w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-8 md:gap-12'
 							)}
 						>
-							<h2
-								className={classnames(
-									notoSansTC.className,
-									'text-white text-2xl md:text-4xl lg:text-5xl mb-4 md:mb-8'
-								)}
-							>
-								{title_zh} <span className={aldrich.className}>{title_en}</span>
-							</h2>
-							<div className="flex flex-col gap-y-5">
+							<BlockTitle titleZh={title_zh} titleEn={title_en} />
+							<div className="flex flex-col gap-8 md:gap-24">
 								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
 							</div>
 						</div>
@@ -356,20 +372,14 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-4xl'
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16'
 							)}
-							id={title_en}
 						>
-							<h2
-								className={classnames(
-									notoSansTC.className,
-									'text-white text-2xl md:text-4xl lg:text-5xl mb-4 md:mb-8'
-								)}
-							>
-								{title_zh} <span className={aldrich.className}>{title_en}</span>
-							</h2>
-							<div className="flex flex-col gap-y-5">
-								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
+							<BlockTitle titleZh={title_zh} titleEn={title_en} />
+							<div className="flex flex-col gap-8 mt-4 md:mt-12">
+								{
+									blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))
+								}
 							</div>
 						</div>
 					))}
@@ -383,19 +393,11 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-4xl'
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16'
 							)}
-							id={title_en}
 						>
-							<h2
-								className={classnames(
-									notoSansTC.className,
-									'text-white text-2xl md:text-4xl lg:text-5xl mb-4 md:mb-8'
-								)}
-							>
-								{title_zh} <span className={aldrich.className}>{title_en}</span>
-							</h2>
-							<div className="flex flex-col gap-y-5">
+							<BlockTitle titleZh={title_zh} titleEn={title_en} />
+							<div className="flex flex-col gap-8 mt-4 md:mt-12">
 								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
 							</div>
 						</div>
@@ -408,14 +410,14 @@ const HomePage = async () => {
 					<div
 						className={classnames(
 							styles.blockBackdrop,
-							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl"
+							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16"
 						)}
 					>
 						<div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
 							<Image src={historywork1} alt="logo" className="h-auto w-full mt-4 mb-8" />
 						</div>
 						<div className="w-full md:w-3/5 flex flex-col justify-center">
-							<a href='https://www.youtube.com/watch?v=KylHCITJITA&list=PL5Zz58VdLY59meXvFQCkwcmEQJJ97QfG2&index=1' target="_blank">
+							<a href='https://www.youtube.com/watch?v=X9Xw4hiFqlc&list=PL5Zz58VdLY59meXvFQCkwcmEQJJ97QfG2&index=2' target="_blank">
 								<h2
 									className={classnames(
 										notoSansTC.className,
@@ -440,7 +442,7 @@ const HomePage = async () => {
 					<div
 						className={classnames(
 							styles.blockBackdrop,
-							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl"
+							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16"
 						)}
 					>
 						<div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
@@ -480,19 +482,11 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16 rounded-3xl'
+								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16'
 							)}
-							id={title_en}
 						>
-							<h2
-								className={classnames(
-									notoSansTC.className,
-									'text-white text-2xl md:text-4xl lg:text-5xl mb-4 md:mb-8'
-								)}
-							>
-								{title_zh} <span className={aldrich.className}>{title_en}</span>
-							</h2>
-							<div className="flex flex-col gap-y-5">
+							<BlockTitle titleZh={title_zh} titleEn={title_en} />
+							<div className="flex flex-col gap-8 mt-4 md:mt-12">
 								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
 							</div>
 						</div>
