@@ -38,6 +38,15 @@ const NavBar = () => {
     };
   }, []);
 
+  function scrollToElement(id) {
+    const element = document.getElementById(id); // Replace 'targetElement' with the ID of the element you want to scroll to
+    const offsetTop = element.offsetTop;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth' // Add smooth scrolling behavior
+    });
+  }  
+
   return (
     <div>
       <div className="flex items-center justify-between px-4 pl-0 fixed top-0 left-0 right-0 h-16 md:h-20 bg-black z-10">
@@ -54,21 +63,11 @@ const NavBar = () => {
         {
           width > MIN_WIDTH ? (
             <nav className="flex flex-row items-center">
-              <Link href="https://www.2023.openhci.com/#工作坊介紹">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>工作坊介紹</div>
-              </Link>
-              <Link href="https://www.2023.openhci.com/#活動資訊">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>活動資訊</div>
-              </Link>
-              <Link href="https://www.2023.openhci.com/#FAQ">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>FAQ</div>
-              </Link>
-              <Link href="https://www.2023.openhci.com/#歷屆作品">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>歷屆作品</div>
-              </Link>
-              <Link href="https://www.2023.openhci.com/#組織成員">
-                <div className={classnames(aldrich.className, 'text-white md:text-base font-regular mx-2 tracking-wider')}>組織成員</div>
-              </Link>
+              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("工作坊介紹")}}>工作坊介紹</div>
+              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("活動資訊")}}>活動資訊</div>
+              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("FAQ")}}>FAQ</div>
+              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("歷屆作品")}}>歷屆作品</div>
+              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("組織成員")}}>組織成員</div>
               <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
                 <Button className="md: mx-4">立即報名</Button>
               </Link>
@@ -87,21 +86,11 @@ const NavBar = () => {
       </div>
       <div className={navActive ? classnames(styles.navOverlay): classnames(styles.navOverlay_closed)}>
         <div className="flex flex-col gap-y-10 items-center">
-          <Link href="https://www.2023.openhci.com/#工作坊介紹" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>工作坊介紹</div>
-          </Link>
-          <Link href="https://www.2023.openhci.com/#活動資訊" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>活動資訊</div>
-          </Link>
-          <Link href="https://www.2023.openhci.com/#FAQ" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>FAQ</div>
-          </Link>
-          <Link href="https://www.2023.openhci.com/#歷屆作品" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>歷屆作品</div>
-          </Link>
-          <Link href="https://www.2023.openhci.com/#組織成員" onClick={() => {setNavActive(false)}}>
-            <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')}>組織成員</div>
-          </Link>
+          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("工作坊介紹");}}>工作坊介紹</div>
+          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("活動資訊");}}>活動資訊</div>
+          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("FAQ");}}>FAQ</div>
+          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("歷屆作品");}}>歷屆作品</div>
+          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("組織成員");}}>組織成員</div>
           <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
             <Button className="">立即報名</Button>
           </Link>
