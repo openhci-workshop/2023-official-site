@@ -9,16 +9,12 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 export const metadata = {
-	title: 'OPENHCI 2023',
-	description:
-		'OPENHCI 2023 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
-	keywords: '',
 	openGraph: {
 		title: 'OPENHCI 2023',
 		description:
 			'OPENHCI 2023',
 		url: process.env.NEXT_PUBLIC_BASE_FETCH_URL,
-		siteName: 'OPENHCI 2023 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
+		siteName: 'OPENHCI 2023',
 		images: [
 			{
 				url: `${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/og.png`,
@@ -28,6 +24,10 @@ export const metadata = {
 		],
 		type: 'website',
 	},
+	title: 'OPENHCI 2023',
+	description:
+		'OPENHCI 2023 是一個專門推廣人機互動學門及促進垮領域合作的密集工作坊。',
+	keywords: '',
 };
 
 export default function RootLayout({ children }) {
