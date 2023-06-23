@@ -285,7 +285,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			);
 		case 'timeline':
 			return (
-				<div className="pl-8 md:pl-0 py-0 md:py-16">
+				<div className="pl-8 md:pl-0 py-0 md:py-16" key={`${type}-${idx}`}>
 					<div className={classnames(
 						styles.timeline,
 						"flex w-full flex-col md:flex-row justify-center md:justify-between")
@@ -296,15 +296,13 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			);
 		case 'timeline-item':
 		return (
-			<div className="flex flex-row-reverse md:flex-col md:space-y-4 items-center md:items-center justify-end md:justify-center py-4 md:py-0">
+			<div className="flex flex-row-reverse md:flex-col md:space-y-4 items-center md:items-center justify-end md:justify-center py-4 md:py-0" key={`${type}-${idx}`}>
 				{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
 			</div>
 		);
 		case 'timeline-dot':
 			return (
-				// <div className='grow grid items-center justify-center'>
-					<div className={classnames(styles.timelineDot, "mx-4 md:mx-0 text-transparent text-xs")}>.</div>
-				// </div>
+				<div className={classnames(styles.timelineDot, "mx-4 md:mx-0 text-transparent text-xs")} key={`${type}-${idx}`}>.</div>
 			)
 		default:
 			return null;

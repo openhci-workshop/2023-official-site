@@ -1,4 +1,5 @@
 import { Noto_Sans_TC } from 'next/font/google';
+import Script from 'next/script'
 
 import NavBar from '@/components/organisms/NavBar';
 
@@ -35,6 +36,16 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={notoSansTC.className} suppressHydrationWarning>
+
+				<Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} id="gasrc"/>
+				<Script strategy="lazyOnload" id="gacode">
+						{`
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+							gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+						`}
+				</Script>
 				<NavBar />
 				<main className="pt-16 md:pt-20 overflow-hidden">{children}</main>
 			</body>
