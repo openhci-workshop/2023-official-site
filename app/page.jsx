@@ -285,11 +285,12 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			);
 		case 'timeline':
 			return (
-				<div className="pl-8 md:pl-0 py-0 md:py-16" key={`${type}-${idx}`}>
+				<div className="pl-6 md:pl-8 md:pl-0 py-0 md:py-16" key={`${type}-${idx}`}>
 					<div className={classnames(
 						styles.timeline,
 						"flex w-full flex-col md:flex-row justify-center md:justify-between")
 					}>
+						<div className={classnames(styles.timelineMobile, "text-transparent md:hidden")}>.</div>
 						{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
 					</div>
 				</div>
