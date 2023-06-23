@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={notoSansTC.className} suppressHydrationWarning>
 
-				{/* <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} id="gasrc"/>
+				<Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} id="gasrc"/>
 				<Script strategy="lazyOnload" id="gacode">
 						{`
 							window.dataLayer = window.dataLayer || [];
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
 							gtag('js', new Date());
 							gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
 						`}
-				</Script> */}
+				</Script>
 				
 				<main className="pt-16 md:pt-20 overflow-hidden">{children}</main>
 			</body>
