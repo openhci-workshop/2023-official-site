@@ -1,8 +1,6 @@
 import { Noto_Sans_TC } from 'next/font/google';
 import Script from 'next/script'
 
-import NavBar from '@/components/organisms/NavBar';
-
 import './globals.css';
 
 const notoSansTC = Noto_Sans_TC({
@@ -24,8 +22,8 @@ export const metadata = {
 		images: [
 			{
 				url: `${process.env.NEXT_PUBLIC_BASE_FETCH_URL}/og.png`,
-				width: 800,
-				height: 600,
+				width: 1200,
+				height: 630,
 			},
 		],
 		type: 'website',
@@ -46,7 +44,7 @@ export default function RootLayout({ children }) {
 							gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
 						`}
 				</Script>
-				<NavBar />
+				
 				<main className="pt-16 md:pt-20 overflow-hidden">{children}</main>
 			</body>
 		</html>
