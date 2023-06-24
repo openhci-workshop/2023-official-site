@@ -7,13 +7,29 @@ import { Noto_Sans_TC, Nunito_Sans, Aldrich } from 'next/font/google';
 import NavBar from '@/components/organisms/NavBar';
 import SectionTitle from '@/components/molecules/SectionTitle';
 import BlockTitle from '@/components/molecules/BlockTitle';
+import WorkPanel from '@/components/molecules/WorkPanel';
 
 import logo from '../public/logo_hero.png';
 import cube from '../public/open_cube.png';
 import styles from './styles.module.scss';
 
-import historywork1 from '../public/history_work1.png';
-import historywork2 from '../public/history_work2.png';
+import work1 from '../public/work/work1.png';
+import work2 from '../public/work/work2.png';
+import work3 from '../public/work/work3.png';
+import work4 from '../public/work/work4.png';
+import work5 from '../public/work/work5.png';
+import work6 from '../public/work/work6.png';
+import work7 from '../public/work/work7.png';
+
+const works = [
+	work1,
+	work2,
+	work3,
+	work4,
+	work5,
+	work6,
+	work7,
+]
 
 export const metadata = {
 	openGraph: {
@@ -75,7 +91,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-lg text-white leading-looser font-normal'
+									'text-xs md:text-lg text-white leading-loose font-normal'
 								)}
 							/>
 						) : (
@@ -94,7 +110,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-lg text-white leading-looser font-normal'
+									'text-xs md:text-lg text-white leading-loose font-normal'
 								)}
 							/>
 						) : (
@@ -189,7 +205,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-looser font-bold"
+								className="text-xs md:text-lg text-white leading-loose font-bold"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -201,7 +217,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			return (
 				<div
 					key={`${type}-${idx}`}
-					className="flex flex-col md:flex-row justify-between"
+					className="flex flex-col md:flex-row md:justify-start md:gap-8 lg:gap-12 xl:gap-16"
 					style={{ marginLeft: (indentLevel - 1) * 24 }}
 				>
 					{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
@@ -239,7 +255,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-looser font-normal"
+								className="text-xs md:text-lg text-white leading-loose font-normal"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -257,7 +273,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									aldrich.className,
-									'text-white font-normal text-sm md:text-3xl lg:text-4xl mb-4'
+									'text-white font-normal text-base md:text-2xl lg:text-3xl mb-4'
 								)}
 							/>
 						) : (
@@ -274,7 +290,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-looser font-normal"
+								className="text-xs md:text-lg text-white leading-loose font-normal"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -301,7 +317,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			);
 		case 'timeline':
 			return (
-				<div className="pl-6 md:pl-8 md:pl-0 py-0 md:py-16" key={`${type}-${idx}`}>
+				<div className="pl-0 md:pl-0 py-0 md:py-16" key={`${type}-${idx}`}>
 					<div className={classnames(
 						styles.timeline,
 						"flex w-full flex-col md:flex-row justify-center md:justify-between")
@@ -320,6 +336,25 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 		case 'timeline-dot':
 			return (
 				<div className={classnames(styles.timelineDot, "mx-4 md:mx-0 text-transparent text-xs")} key={`${type}-${idx}`}>.</div>
+			)
+		case 'timeline-date':
+			return (
+				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24, width: "102px"}}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<h2
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className={classnames(
+									aldrich.className,
+									'text-lg md:text-2xl font-semibold'
+								)}
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
 			)
 		default:
 			return null;
@@ -370,7 +405,7 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-8 md:gap-12'
+								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
 							)}
 						>
 							<BlockTitle titleZh={title_zh} titleEn={title_en} />
@@ -389,7 +424,7 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16'
+								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
 							)}
 						>
 							<BlockTitle titleZh={title_zh} titleEn={title_en} />
@@ -410,7 +445,7 @@ const HomePage = async () => {
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16'
+								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
 							)}
 						>
 							<BlockTitle titleZh={title_zh} titleEn={title_en} />
@@ -424,82 +459,24 @@ const HomePage = async () => {
 				{/* 歷屆作品 */}
 				<section className="mb-14 md:mb-28" id="歷屆作品">
 					<SectionTitle titleZh="歷屆作品" titleEn="" />
-					<div
-						className={classnames(
-							styles.blockBackdrop,
-							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16"
-						)}
-					>
-						<div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
-							<Image src={historywork1} alt="logo" className="h-auto w-full mt-4 mb-8" />
+					{content?.slice(8,9).map(({ title_zh, title_en, blocks }) => (
+						<div key={title_en}>
+							{blocks?.map(({title, url, description}, idx) => (
+								<WorkPanel title={title} image={works[idx]} url={url} description={description} key={`${title}`} />
+							))}
 						</div>
-						<div className="w-full md:w-3/5 flex flex-col justify-center">
-							<a href='https://www.youtube.com/watch?v=X9Xw4hiFqlc&list=PL5Zz58VdLY59meXvFQCkwcmEQJJ97QfG2&index=2' target="_blank">
-								<h2
-									className={classnames(
-										notoSansTC.className,
-										"text-white text-2xl md:text-4xl lg:text-4xl mb-4 md:mb-6"
-									)}
-								>
-									<span style={{ boxShadow: "inset 0 -1px 0 #fff" }}>情緒波紋</span>
-								</h2>
-							</a>
-							<p
-								className={classnames(
-									notoSansTC.className,
-									"leading-loose"
-								)}
-							>
-								上班族每天都必須面對龐大的工作壓力，長期容易使人陷入低潮漩渦，造成身心靈影響。「情緒波紋」是一款桌上型互動裝置，透過按壓，將情緒轉化成一幅獨特又錯落有致的情緒波紋。透過觀察自身情緒及掌握長期的情緒變化，有助於心理健康。
-							</p>
-						</div>
-					</div>
-
-
-					<div
-						className={classnames(
-							styles.blockBackdrop,
-							"relative w-100 flex flex-col md:flex-row px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16"
-						)}
-					>
-						<div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
-							<Image src={historywork2} alt="logo" className="h-auto w-full mt-4 mb-8" />
-						</div>
-						<div className="w-full md:w-3/5 flex flex-col justify-center">
-							<a href='https://www.youtube.com/watch?v=KylHCITJITA&list=PL5Zz58VdLY59meXvFQCkwcmEQJJ97QfG2&index=2' target="_blank">
-								<h2
-									className={classnames(
-										notoSansTC.className,
-										aldrich.className,
-										"text-white text-2xl md:text-4xl lg:text-4xl mb-4 md:mb-6"
-									)}
-								>
-									<span style={{ boxShadow: "inset 0 -1px 0 #fff" }}>抒花 Blossom</span>
-								</h2>
-							</a>
-							<p
-								className={classnames(
-									notoSansTC.className,
-									aldrich.className,
-									"leading-loose"
-								)}
-							>
-								抒花Blossom，是一款透過心率變化偵測居家工作者當下的壓力指數並將其視覺化，以花朵枯萎與光的變化促使工作者意識到自己的壓力狀態並走出房門曬太陽的互動裝置，讓它重新綻放的同時，也讓居家工作者休息。
-							</p>
-						</div>
-					</div>
-
+					))}
 				</section >
 
 				{/* 組織成員 */}
 				<section className="mb-14 md:mb-28" id="組織成員">
 				<SectionTitle titleZh="組織成員" titleEn="" />
-          {content?.slice(8,9).map(({ title_zh, title_en, blocks }) => (
+          {content?.slice(9,10).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_en}
 							className={classnames(
 								styles.blockBackdrop,
-								'relative w-100 flex flex-col px-6 md:px-12 xl:px-32 py-6 md:py-10 xl:py-20 mb-8 md:mb-16'
+								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
 							)}
 						>
 							<BlockTitle titleZh={title_zh} titleEn={title_en} />
@@ -509,6 +486,27 @@ const HomePage = async () => {
 						</div>
 					))}
 				</section>
+
+				<div className={classnames(styles.footer, "flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
+					<div className="text-xs md:text-base">
+						COPYRIGHT © 2023 OpenHCI
+					</div>
+					<div className="text-xs md:text-base text-center leading-6">
+						/ <u><a href="https://www.2022.openhci.com">2022</a></u>{' '}
+						/ <u><a href="https://www.2021.openhci.com">2021</a></u>{' '}
+						/ <u><a href="https://www.2019.openhci.com">2019</a></u>{' '}
+						/ <u><a href="https://www.2018.openhci.com">2018</a></u>{' '}
+						/ <u><a href="https://www.2017.openhci.com">2017</a></u>{' '}
+						/ <u><a href="https://www.2016.openhci.com">2016</a></u>{' '}
+						/ <u><a href="https://www.2015.openhci.com">2015</a></u>{' '}
+						/ <u><a href="https://www.2014.openhci.com">2014</a></u>{' '}
+						/ <u><a href="https://www.2013.openhci.com">2013</a></u>{' '}
+						/ <u><a href="https://www.2012.openhci.com">2012</a></u>{' '}
+						/ <u><a href="https://www.2011.openhci.com">2011</a></u>{' '}
+						/ <u><a href="https://www.2009.openhci.com">2009</a></u>{' '}
+						/
+					</div>
+				</div>
 			</div>
 		</>
 	);
