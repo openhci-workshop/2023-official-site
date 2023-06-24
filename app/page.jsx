@@ -487,11 +487,12 @@ const HomePage = async () => {
 					))}
 				</section>
 
+				{/* footer */}
 				<div className={classnames(styles.footer, "flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
-					<div className="text-xs md:text-base">
+					<div className="text-xs md:text-base z-10">
 						COPYRIGHT © 2023 OpenHCI
 					</div>
-					<div className="text-xs md:text-base text-center leading-6">
+					<div className="text-xs md:text-base text-center leading-6 z-10">
 						/ <u><a href="https://www.2022.openhci.com">2022</a></u>{' '}
 						/ <u><a href="https://www.2021.openhci.com">2021</a></u>{' '}
 						/ <u><a href="https://www.2019.openhci.com">2019</a></u>{' '}
