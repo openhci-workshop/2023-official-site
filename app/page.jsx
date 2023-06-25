@@ -384,7 +384,7 @@ const HomePage = async () => {
 							"flex flex-row space-x-4 md:space-x-8 mb-8 items-start"
 						)
 					}>
-						<Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
+						<Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
 							<Button variant="normal">
 								立即報名
 							</Button>
