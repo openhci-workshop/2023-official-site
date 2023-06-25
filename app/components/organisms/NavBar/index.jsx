@@ -68,7 +68,7 @@ const NavBar = () => {
               <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("FAQ")}}>FAQ</div>
               <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("歷屆作品")}}>歷屆作品</div>
               <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("組織成員")}}>組織成員</div>
-              <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
+              <Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
                 <Button className="md: mx-4">立即報名</Button>
               </Link>
             </nav>
@@ -91,7 +91,7 @@ const NavBar = () => {
           <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("FAQ");}}>FAQ</div>
           <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("歷屆作品");}}>歷屆作品</div>
           <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("組織成員");}}>組織成員</div>
-          <Link href="https://forms.gle/5MLgwDqqC18mdhJX6" target="_blank">
+          <Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
             <Button className="">立即報名</Button>
           </Link>
         </div>
