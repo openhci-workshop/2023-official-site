@@ -73,7 +73,7 @@ function Scene({ ...props }) {
         <group position={[0, 0, 48]} rotation={[0, 0, 0]} scale={5}>
           <Interdisciplinary />
         </group>
-        <group position={[0, 50, 0]} rotation={[Math.PI / 2, 0, 0]} scale={6}>
+        <group position={[0, 50, 0]} rotation={[Math.PI / 2, 0, 0]} scale={35}>
           <Insight />
         </group>
         {/* <Html
