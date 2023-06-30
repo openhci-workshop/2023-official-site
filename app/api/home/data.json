@@ -308,7 +308,7 @@
 		"blocks": [
 			{
 				"title": "情緒波紋",
-				"url": "https://youtu.be/KylHCITJITA",
+				"url": "https://youtu.be/X9Xw4hiFqlc",
 				"description": "上班族每天都必須面對龐大的工作壓力，長期容易使人陷入低潮漩渦，造成身心靈影響。「情緒波紋」是一款桌上型互動裝置，透過按壓，將情緒轉化成一幅獨特又錯落有致的情緒波紋。透過觀察自身情緒及掌握長期的情緒變化，有助於心理健康。"
 			},
 			{
@@ -594,6 +594,11 @@
 				"type": "grid",
 				"level": 1,
 				"content": [
+					{
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李昀潔"] }, "台灣大學 機械系"]
+					},
 					{
 						"type": "name",
 						"level": 1,
