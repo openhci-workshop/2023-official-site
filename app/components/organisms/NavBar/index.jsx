@@ -26,7 +26,7 @@ const aldrich = Aldrich({
 });
 
 const sections = [
-  {"y": 350,  "title": ""},
+  {"y": 0,  "title": ""},
   {"y": 350,  "title": "工作坊介紹"},
   {"y": 2600, "title": "活動資訊"},
   {"y": 4700, "title": "FAQ"},
