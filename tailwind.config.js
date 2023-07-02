@@ -12,6 +12,9 @@ module.exports = {
 			listStyleType: {
 				roman: 'lower-roman',
 			},
+			lineHeight: {
+				looser: '2.5 !important',
+			},
 		},
 	},
 	plugins: [],
