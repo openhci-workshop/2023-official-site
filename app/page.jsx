@@ -402,7 +402,7 @@ const HomePage = async () => {
 					<SectionTitle titleZh="工作坊介紹" titleEn="" />
 					{content?.slice(0, 4).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -421,7 +421,7 @@ const HomePage = async () => {
 					<SectionTitle titleZh="活動資訊" titleEn="" />
 					{content?.slice(4, 6).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -442,7 +442,7 @@ const HomePage = async () => {
 					<SectionTitle titleZh="" titleEn="FAQ" />
 					{content?.slice(6, 8).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -460,7 +460,7 @@ const HomePage = async () => {
 				<section className="mb-14 md:mb-28" id="歷屆作品">
 					<SectionTitle titleZh="歷屆作品" titleEn="" />
 					{content?.slice(8,9).map(({ title_zh, title_en, blocks }) => (
-						<div key={title_en}>
+						<div key={title_zh + title_en}>
 							{blocks?.map(({title, url, description}, idx) => (
 								<WorkPanel title={title} image={works[idx]} url={url} description={description} key={`${title}`} />
 							))}
@@ -473,7 +473,7 @@ const HomePage = async () => {
 				<SectionTitle titleZh="組織成員" titleEn="" />
           {content?.slice(9,10).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh + title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
