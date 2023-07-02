@@ -44,7 +44,7 @@ const WorkPanel = ({ title, image, url, description }) => (
         className={classnames(
           notoSansTC.className,
           aldrich.className,
-          "text-xs md:text-lg text-white leading-loose font-normal"
+          "text-xs md:text-lg text-white leading-looser font-normal"
         )}
       >
         {description}
