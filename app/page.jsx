@@ -374,18 +374,15 @@ const HomePage = async () => {
 						"flex flex-col items-start py-6 md:py-12"
 					)}
 			>
-				<div className="container mx-auto px-6 md:px-8">
-					<Image src={logo} alt="logo" className="h-auto w-full md:w-1/2 lg:w-1/3 mt-4 mb-8"/>
-					<h1 className={classnames(notoSansTC.className, 'text-white text-lg md:text-2xl font-semibold mb-8')}>
-						第十三屆台灣人機互動工作坊
-					</h1>
+				<div className={classnames("container w-screen mx-auto px-6 md:px-8")}>
+					<Image src={logo} alt="logo" className={classnames(styles.logo, "h-auto w-full md:w-1/2 lg:w-3/7 mt-4 mb-8")} />
 					<div className={
 						classnames(
 							"flex flex-row space-x-4 md:space-x-8 mb-8 items-start"
 						)
 					}>
 						<Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
-							<Button variant="normal">
+							<Button className="z-0" variant="normal">
 								立即報名
 							</Button>
 						</Link>
@@ -402,7 +399,7 @@ const HomePage = async () => {
 					<SectionTitle titleZh="工作坊介紹" titleEn="" />
 					{content?.slice(0, 4).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -421,7 +418,7 @@ const HomePage = async () => {
 					<SectionTitle titleZh="活動資訊" titleEn="" />
 					{content?.slice(4, 6).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -442,7 +439,7 @@ const HomePage = async () => {
 					<SectionTitle titleZh="" titleEn="FAQ" />
 					{content?.slice(6, 8).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -460,7 +457,7 @@ const HomePage = async () => {
 				<section className="mb-14 md:mb-28" id="歷屆作品">
 					<SectionTitle titleZh="歷屆作品" titleEn="" />
 					{content?.slice(8,9).map(({ title_zh, title_en, blocks }) => (
-						<div key={title_en}>
+						<div key={title_zh + title_en}>
 							{blocks?.map(({title, url, description}, idx) => (
 								<WorkPanel title={title} image={works[idx]} url={url} description={description} key={`${title}`} />
 							))}
@@ -473,7 +470,7 @@ const HomePage = async () => {
 				<SectionTitle titleZh="組織成員" titleEn="" />
           {content?.slice(9,10).map(({ title_zh, title_en, blocks }) => (
 						<div
-							key={title_en}
+							key={title_zh + title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
@@ -488,23 +485,23 @@ const HomePage = async () => {
 				</section>
 
 				{/* footer */}
-				<div className={classnames(styles.footer, "flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
+				<div className={classnames(styles.footer, "flex flex-col lg:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
 					<div className="text-xs md:text-base z-10">
 						COPYRIGHT © 2023 OpenHCI
 					</div>
 					<div className="text-xs md:text-base text-center leading-6 z-10">
-						/ <u><a href="https://www.2022.openhci.com">2022</a></u>{' '}
-						/ <u><a href="https://www.2021.openhci.com">2021</a></u>{' '}
-						/ <u><a href="https://www.2019.openhci.com">2019</a></u>{' '}
-						/ <u><a href="https://www.2018.openhci.com">2018</a></u>{' '}
-						/ <u><a href="https://www.2017.openhci.com">2017</a></u>{' '}
-						/ <u><a href="https://www.2016.openhci.com">2016</a></u>{' '}
-						/ <u><a href="https://www.2015.openhci.com">2015</a></u>{' '}
-						/ <u><a href="https://www.2014.openhci.com">2014</a></u>{' '}
-						/ <u><a href="https://www.2013.openhci.com">2013</a></u>{' '}
-						/ <u><a href="https://www.2012.openhci.com">2012</a></u>{' '}
-						/ <u><a href="https://www.2011.openhci.com">2011</a></u>{' '}
-						/ <u><a href="https://www.2009.openhci.com">2009</a></u>{' '}
+						/ <span><a href="https://www.2022.openhci.com">2022</a></span>{' '}
+						/ <span><a href="https://www.2021.openhci.com">2021</a></span>{' '}
+						/ <span><a href="https://www.2019.openhci.com">2019</a></span>{' '}
+						/ <span><a href="https://www.2018.openhci.com">2018</a></span>{' '}
+						/ <span><a href="https://www.2017.openhci.com">2017</a></span>{' '}
+						/ <span><a href="https://www.2016.openhci.com">2016</a></span>{' '}
+						/ <span><a href="https://www.2015.openhci.com">2015</a></span>{' '}
+						/ <span><a href="https://www.2014.openhci.com">2014</a></span>{' '}
+						/ <span><a href="https://www.2013.openhci.com">2013</a></span>{' '}
+						/ <span><a href="https://www.2012.openhci.com">2012</a></span>{' '}
+						/ <span><a href="https://www.2011.openhci.com">2011</a></span>{' '}
+						/ <span><a href="https://www.2009.openhci.com">2009</a></span>{' '}
 						/
 					</div>
 				</div>

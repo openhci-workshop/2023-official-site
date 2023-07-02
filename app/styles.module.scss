@@ -7,8 +7,14 @@
 }
 
 .heroBackdrop {
-	background: linear-gradient(168.65deg, rgba(255, 255, 255, 0.27) -2.45%, rgba(255, 255, 255, 0) 75.41%);
-	backdrop-filter: blur(22.5px);
+	background-image: url('../public/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	z-index: -1;
+
+	// background: linear-gradient(168.65deg, rgba(255, 255, 255, 0.27) -2.45%, rgba(255, 255, 255, 0) 75.41%);
+	// backdrop-filter: blur(22.5px);
 	/* Note: backdrop-filter has minimal browser support */
 
 	// border-radius: 8px;
@@ -203,13 +209,25 @@
 .cube {
 	display: block;
 	position: fixed;
-	top: 100px;
+	top: 175px;
 	right: 100px;
 
 	@media screen and (max-width: 767px) {
 		display: block;
 		position: fixed;
-		top: 265px;
+		top: 340px;
 		right: 24px;
+	}
+}
+
+.logo {
+	translate: 0 0;
+
+	@media screen and (min-width: 768px) {
+		translate: -24px 0;
+	}
+
+	@media screen and (min-width: 1024px) {
+		translate: -42px 0;
 	}
 }

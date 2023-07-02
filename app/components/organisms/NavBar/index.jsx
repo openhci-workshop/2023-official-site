@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import classnames from 'classnames';
-import { Aldrich } from 'next/font/google';
+import { Noto_Sans_TC, Aldrich } from 'next/font/google';
 
 import Button from '@/components/atoms/Button';
 
@@ -13,16 +13,51 @@ import styles from './styles.module.scss';
 import Logo from '../../../../public/logo_nav.png';
 import AltLogo from '../../../../public/tai_logo.png';
 
-const MIN_WIDTH = 1023;
+const MIN_WIDTH = 1034;
+
+const notoSansTC = Noto_Sans_TC({
+	weight: ['300', '400', '500', '700'],
+	subsets: ['latin'],
+});
 
 const aldrich = Aldrich({
 	weight: ['400'],
 	subsets: ['latin'],
 });
 
+const sections = [
+  {"y": 0,  "title": ""},
+  {"y": 350,  "title": "工作坊介紹"},
+  {"y": 2600, "title": "活動資訊"},
+  {"y": 4700, "title": "FAQ"},
+  {"y": 6700, "title": "歷屆作品"},
+  {"y": 9700, "title": "組織成員"}
+]
+
 const NavBar = () => {
   const [navActive, setNavActive] = useState(false);
   const [width, setWidth] = useState(0);
+  const [active, setActive] = useState('');
+
+  useEffect(() => {
+    const options = { passive: true };
+
+    const scroll = (event) => {
+      const { scrollY } = window;  
+
+      let current = "";
+      sections.forEach((section) => {
+        if (scrollY >= section.y) {
+          current = section.title;
+        }
+      });
+
+      setActive(current);
+    };
+
+    document.addEventListener("scroll", scroll, options);
+    () => document.removeEventListener("scroll", scroll, options);
+  });
 
   useEffect(() => {
     const handleResize = () => {
@@ -63,11 +98,11 @@ const NavBar = () => {
         {
           width > MIN_WIDTH ? (
             <nav className="flex flex-row items-center">
-              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("工作坊介紹")}}>工作坊介紹</div>
-              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("活動資訊")}}>活動資訊</div>
-              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("FAQ")}}>FAQ</div>
-              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("歷屆作品")}}>歷屆作品</div>
-              <div className={classnames(aldrich.className, styles.navItem, 'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("組織成員")}}>組織成員</div>
+              <div className={classnames(notoSansTC.className,  styles.navItem, active === '工作坊介紹' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("工作坊介紹")}}>工作坊介紹</div>
+              <div className={classnames(notoSansTC.className,  styles.navItem, active === '活動資訊' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("活動資訊")}}>活動資訊</div>
+              <div className={classnames(aldrich.className,     styles.navItem, active === 'FAQ' && styles.navItem_active,'text-white md:text-base font-regular mx-2 mt-1 tracking-wider')} onClick={() => {scrollToElement("FAQ")}}>FAQ</div>
+              <div className={classnames(notoSansTC.className,  styles.navItem, active === '歷屆作品' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("歷屆作品")}}>歷屆作品</div>
+              <div className={classnames(notoSansTC.className,  styles.navItem, active === '組織成員' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("組織成員")}}>組織成員</div>
               <Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
                 <Button className="md: mx-4">立即報名</Button>
               </Link>
@@ -86,11 +121,11 @@ const NavBar = () => {
       </div>
       <div className={navActive ? classnames(styles.navOverlay): classnames(styles.navOverlay_closed)}>
         <div className="flex flex-col gap-y-10 items-center">
-          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("工作坊介紹");}}>工作坊介紹</div>
-          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("活動資訊");}}>活動資訊</div>
-          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("FAQ");}}>FAQ</div>
-          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("歷屆作品");}}>歷屆作品</div>
-          <div className={classnames(aldrich.className, 'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("組織成員");}}>組織成員</div>
+          <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("工作坊介紹");}}>工作坊介紹</div>
+          <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("活動資訊");}}>活動資訊</div>
+          <div className={classnames(aldrich.className,     'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("FAQ");}}>FAQ</div>
+          <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("歷屆作品");}}>歷屆作品</div>
+          <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("組織成員");}}>組織成員</div>
           <Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
             <Button className="">立即報名</Button>
           </Link>

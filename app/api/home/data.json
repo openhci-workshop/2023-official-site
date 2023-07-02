@@ -151,10 +151,10 @@
 							{
 								"type": "h2",
 								"level": 1,
-								"content": ["報名結束"]
+								"content": ["報名結束¹"]
 							},
 							{ "type": "timeline-dot", "level": 1, "content": [""] },
-							{ "type": "timeline-date", "level": 1, "content": ["2023/7/01"] }
+							{ "type": "timeline-date", "level": 1, "content": ["2023/7/05"] }
 						]
 					},
 					{
@@ -164,7 +164,7 @@
 							{
 								"type": "h2",
 								"level": 1,
-								"content": ["正取名單公佈*"]
+								"content": ["正取名單公佈²"]
 							},
 							{ "type": "timeline-dot", "level": 1, "content": [""] },
 							{ "type": "timeline-date", "level": 1, "content": ["2023/7/10"] }
@@ -188,7 +188,7 @@
 			{
 				"type": "h5",
 				"level": 1,
-				"content": ["*網路公佈與信件通知"]
+				"content": ["¹23:59截止 / ²網路公佈與信件通知"]
 			}
 		]
 	},
