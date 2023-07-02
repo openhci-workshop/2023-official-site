@@ -485,23 +485,23 @@ const HomePage = async () => {
 				</section>
 
 				{/* footer */}
-				<div className={classnames(styles.footer, "flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
+				<div className={classnames(styles.footer, "flex flex-col lg:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
 					<div className="text-xs md:text-base z-10">
 						COPYRIGHT © 2023 OpenHCI
 					</div>
 					<div className="text-xs md:text-base text-center leading-6 z-10">
-						/ <u><a href="https://www.2022.openhci.com">2022</a></u>{' '}
-						/ <u><a href="https://www.2021.openhci.com">2021</a></u>{' '}
-						/ <u><a href="https://www.2019.openhci.com">2019</a></u>{' '}
-						/ <u><a href="https://www.2018.openhci.com">2018</a></u>{' '}
-						/ <u><a href="https://www.2017.openhci.com">2017</a></u>{' '}
-						/ <u><a href="https://www.2016.openhci.com">2016</a></u>{' '}
-						/ <u><a href="https://www.2015.openhci.com">2015</a></u>{' '}
-						/ <u><a href="https://www.2014.openhci.com">2014</a></u>{' '}
-						/ <u><a href="https://www.2013.openhci.com">2013</a></u>{' '}
-						/ <u><a href="https://www.2012.openhci.com">2012</a></u>{' '}
-						/ <u><a href="https://www.2011.openhci.com">2011</a></u>{' '}
-						/ <u><a href="https://www.2009.openhci.com">2009</a></u>{' '}
+						/ <span><a href="https://www.2022.openhci.com">2022</a></span>{' '}
+						/ <span><a href="https://www.2021.openhci.com">2021</a></span>{' '}
+						/ <span><a href="https://www.2019.openhci.com">2019</a></span>{' '}
+						/ <span><a href="https://www.2018.openhci.com">2018</a></span>{' '}
+						/ <span><a href="https://www.2017.openhci.com">2017</a></span>{' '}
+						/ <span><a href="https://www.2016.openhci.com">2016</a></span>{' '}
+						/ <span><a href="https://www.2015.openhci.com">2015</a></span>{' '}
+						/ <span><a href="https://www.2014.openhci.com">2014</a></span>{' '}
+						/ <span><a href="https://www.2013.openhci.com">2013</a></span>{' '}
+						/ <span><a href="https://www.2012.openhci.com">2012</a></span>{' '}
+						/ <span><a href="https://www.2011.openhci.com">2011</a></span>{' '}
+						/ <span><a href="https://www.2009.openhci.com">2009</a></span>{' '}
 						/
 					</div>
 				</div>
