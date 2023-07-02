@@ -91,7 +91,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-lg text-white leading-loose font-normal'
+									'text-xs md:text-lg text-white leading-looser font-normal'
 								)}
 							/>
 						) : (
@@ -110,7 +110,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-lg text-white leading-loose font-normal'
+									'text-xs md:text-lg text-white leading-looser font-normal'
 								)}
 							/>
 						) : (
@@ -205,7 +205,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-loose font-bold"
+								className="text-xs md:text-lg text-white leading-looser font-bold"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -255,7 +255,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-loose font-normal"
+								className="text-xs md:text-lg text-white leading-looser font-normal"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -290,7 +290,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-loose font-normal"
+								className="text-xs md:text-lg text-white leading-looser font-normal"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
