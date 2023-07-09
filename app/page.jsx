@@ -91,7 +91,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-lg text-white leading-looser font-normal'
+									'text-xs md:text-lg text-white leading-looser font-normal tracking-wider'
 								)}
 							/>
 						) : (
@@ -110,7 +110,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-lg text-white leading-looser font-normal'
+									'text-xs md:text-lg text-white leading-looser font-normal tracking-wider'
 								)}
 							/>
 						) : (
@@ -129,7 +129,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-lg md:text-2xl font-semibold leading-8 mb-1'
+									'text-lg md:text-2xl font-semibold leading-8 mb-1 tracking-wider'
 								)}
 							/>
 						) : (
@@ -148,7 +148,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-base md:text-3xl font-semibold leading-8 mb-5'
+									'text-base md:text-3xl font-semibold leading-8 mb-5 tracking-wider'
 								)}
 							/>
 						) : (
@@ -168,7 +168,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								className={classnames(
 									notoSansTC.className,
 									styles.h4,
-									'text-xs md:text-lg text-white leading-none font-black mb-8'
+									'text-xs md:text-lg text-white leading-none font-black mb-8 tracking-wider'
 								)}
 							/>
 						) : (
@@ -187,7 +187,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									notoSansTC.className,
-									'text-xs md:text-sm text-white font-normal'
+									'text-xs md:text-sm text-white font-normal tracking-wider'
 								)}
 								style={{ lineHeight: '2 !important' }}
 							/>
@@ -205,7 +205,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-looser font-bold"
+								className="text-xs md:text-lg text-white leading-looser font-bold tracking-wider"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -255,7 +255,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-looser font-normal"
+								className="text-xs md:text-lg text-white leading-looser font-normal tracking-wider"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -273,7 +273,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									aldrich.className,
-									'text-white font-normal text-base md:text-2xl lg:text-3xl mb-4'
+									'text-white font-normal text-base md:text-2xl lg:text-3xl mb-4 tracking-wider'
 								)}
 							/>
 						) : (
@@ -290,7 +290,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 							<p
 								key={_content}
 								dangerouslySetInnerHTML={{ __html: _content }}
-								className="text-xs md:text-lg text-white leading-looser font-normal"
+								className="text-xs md:text-lg text-white leading-looser font-normal tracking-wider"
 							/>
 						) : (
 							renderHTML(_content.type, _content.content, _content.level)
@@ -347,7 +347,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									aldrich.className,
-									'text-lg md:text-2xl font-semibold'
+									'text-lg md:text-2xl font-semibold tracking-wider'
 								)}
 							/>
 						) : (
@@ -485,8 +485,8 @@ const HomePage = async () => {
 				</section>
 
 				{/* footer */}
-				<div className={classnames(styles.footer, "flex flex-col lg:flex-row items-center space-y-4 md:space-y-0 md:justify-between")}>
-					<div className="text-xs md:text-base z-10">
+				<div className={classnames(styles.footer, "flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:justify-start lg:px-20")}>
+					<div className="text-xs md:text-base z-10 lg:w-1/3">
 						COPYRIGHT © 2023 OpenHCI
 					</div>
 					<div className="text-xs md:text-base text-center leading-6 z-10">
