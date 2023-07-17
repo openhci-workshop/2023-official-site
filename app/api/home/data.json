@@ -406,7 +406,7 @@
 					{
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["盧德原"] }, "台灣大學 資訊管理學系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["盧德原"] }, "台灣大學 資訊管理學系", {"type": "link", "level": 1, "content": ["https://derekdylu.com/"]}]
 					},
           {
 						"type": "name",
@@ -756,5 +756,81 @@
 				]
 			}
     ]
+	},
+	{
+		"title_zh": "贊助單位",
+		"title_en": "Sponsors",
+		"blocks": [
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{
+						"type": "h4",
+						"level": 1,
+						"content": ["金級"]
+					},
+					{
+						"type": "grid",
+						"level": 1,
+						"content": [
+							{
+								"type": "image",
+								"level": 1,
+								"content": ["/sponsors/gold_optoma.png"],
+								"dimension": {
+									"width": 190,
+									"height": 100
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{
+						"type": "h4",
+						"level": 1,
+						"content": ["銀級"]
+					},
+					{
+						"type": "grid",
+						"level": 1,
+						"content": [
+							{
+								"type": "image",
+								"level": 1,
+								"content": ["/sponsors/silver_23Design.png"],
+								"dimension": {
+									"width": 250,
+									"height": 250
+								}
+							},
+							{
+								"type": "image",
+								"level": 1,
+								"content": ["/sponsors/silver_AJA.jpg"],
+								"dimension": {
+									"width": 146,
+									"height": 100
+								}
+							},
+							{
+								"type": "image",
+								"level": 1,
+								"content": ["/sponsors/silver_NCCU.png"],
+								"dimension": {
+									"width": 159,
+									"height": 100
+								}
+							}
+						]
+					}
+				]
+			}
+		]
 	}
 ]

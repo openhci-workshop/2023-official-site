@@ -15,10 +15,11 @@
 			font-style: normal;
 			font-weight: 400;
 			font-size: 46px;
-			margin-left: 12px;
+			padding-top: 4px;
 
 			@media screen and (max-width: 767px) {
 				font-size: 18px;
+				padding-top: 3px;
 			}
 		}
 	}
@@ -26,7 +27,6 @@
 	& > div {
 		width: 442px;
 		height: 6px;
-
 		background: linear-gradient(
 			90deg,
 			rgba(250, 193, 119, 0) 1.04%, 
@@ -35,7 +35,6 @@
 			#D165B2 49.48%, rgba(176, 81, 195, 0.9) 68.23%, 
 			rgba(115, 85, 202, 0.65) 85.42%, 
 			rgba(69, 88, 207, 0) 100%);
-
 
 		@media screen and (max-width: 767px) {
 			width: 200px;
