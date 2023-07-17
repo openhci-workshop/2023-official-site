@@ -8,6 +8,7 @@ import NavBar from '@/components/organisms/NavBar';
 import SectionTitle from '@/components/molecules/SectionTitle';
 import BlockTitle from '@/components/molecules/BlockTitle';
 import WorkPanel from '@/components/molecules/WorkPanel';
+import Carousel from '@/components/organisms/Carousel';
 
 import logo from '../public/logo_hero.png';
 import cube from '../public/open_cube.png';
@@ -243,13 +244,33 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
           {content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
         </div>
       );
+		case 'image':
+			return (
+				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24 }}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<Image
+								key={_content}
+								src={"" + _content}
+								alt={_content}
+								width={150}
+								height={78}
+								className=""
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			);
     case 'name':
       return (
         <div
           key={`${type}-${idx}`}
-          className="flex flex-row lg:flex-col gap-2 items-start"
+          className="flex flex-col gap-0 items-start mt-4"
           style={{ marginLeft: (indentLevel - 1) * 24 }}
         >
+					<img src={"/staff/" + content[0].content[0] + ".jpg"} alt={content[0].content} className="w-20 sm:w-40 md:w-48 lg:w-64" />
           {content?.map(_content => 
             typeof _content === 'string' ? (
 							<p
@@ -258,7 +279,9 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								className="text-xs md:text-lg text-white leading-looser font-normal tracking-widest"
 							/>
 						) : (
-							renderHTML(_content.type, _content.content, _content.level)
+							<a key={_content} className={classnames(`${content[2] && "underline"}`)} href={content[2]?.content[0]} target="_blank" rel="noreferrer" style={content[2] && {cursor: "pointer"}}>
+								{renderHTML(_content.type, _content.content, _content.level)}
+							</a>
 						)
           )}
         </div>
@@ -413,6 +436,14 @@ const HomePage = async () => {
 					))}
 				</section>
 
+				{/* 主題演講 */}
+				<section className="mb-14 md:mb-28" id="主題演講">
+				<SectionTitle titleZh="主題演講" titleEn="" />
+					<div className={classnames(styles.carousel, 'flex justify-center items-center m-24')}>
+						<Carousel />
+					</div>
+				</section>
+
 				{/* 活動資訊 */}
 				<section className="mb-14 md:mb-28" id="活動資訊">
 					<SectionTitle titleZh="活動資訊" titleEn="" />
@@ -471,6 +502,20 @@ const HomePage = async () => {
           {content?.slice(9,10).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_zh + title_en}
+							className={classnames(
+								styles.blockBackdrop,
+								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'
+							)}
+						>
+							<BlockTitle titleZh={title_zh} titleEn={title_en} />
+							<div className="flex flex-col gap-8 mt-4 md:mt-12">
+								{blocks?.map(({ type, content, level }, idx) => renderHTML(type, content, level, idx))}
+							</div>
+						</div>
+					))}
+					{content?.slice(10,11).map(({ title_zh, title_en, blocks }) => (
+						<div
+							key={title_zh+title_en}
 							className={classnames(
 								styles.blockBackdrop,
 								'relative w-100 flex flex-col p-8 sm:px-12 sm:py-16 lg:px-20 lg:py-24 mb-8 md:mb-16 gap-4 md:gap-12'

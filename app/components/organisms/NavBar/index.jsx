@@ -28,10 +28,11 @@ const aldrich = Aldrich({
 const sections = [
   {"y": 0,  "title": ""},
   {"y": 350,  "title": "工作坊介紹"},
-  {"y": 2600, "title": "活動資訊"},
-  {"y": 4700, "title": "FAQ"},
-  {"y": 6700, "title": "歷屆作品"},
-  {"y": 9700, "title": "組織成員"}
+  {"y": 2900, "title": "主題演講"},
+  {"y": 3600, "title": "活動資訊"},
+  {"y": 5800, "title": "FAQ"},
+  {"y": 7800, "title": "歷屆作品"},
+  {"y": 12200, "title": "組織成員"}
 ]
 
 const NavBar = () => {
@@ -98,6 +99,7 @@ const NavBar = () => {
           width > MIN_WIDTH ? (
             <nav className="flex flex-row items-center">
               <div className={classnames(notoSansTC.className,  styles.navItem, active === '工作坊介紹' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("工作坊介紹")}}>工作坊介紹</div>
+              <div className={classnames(notoSansTC.className,  styles.navItem, active === '主題演講' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("主題演講")}}>主題演講</div>
               <div className={classnames(notoSansTC.className,  styles.navItem, active === '活動資訊' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("活動資訊")}}>活動資訊</div>
               <div className={classnames(aldrich.className,     styles.navItem, active === 'FAQ' && styles.navItem_active,'text-white md:text-base font-regular mx-2 mt-1 tracking-wider')} onClick={() => {scrollToElement("FAQ")}}>FAQ</div>
               <div className={classnames(notoSansTC.className,  styles.navItem, active === '歷屆作品' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("歷屆作品")}}>歷屆作品</div>
@@ -121,6 +123,7 @@ const NavBar = () => {
       <div className={navActive ? classnames(styles.navOverlay): classnames(styles.navOverlay_closed)}>
         <div className="flex flex-col gap-y-10 items-center">
           <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("工作坊介紹");}}>工作坊介紹</div>
+          <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("主題演講");}}>主題演講</div>
           <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("活動資訊");}}>活動資訊</div>
           <div className={classnames(aldrich.className,     'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("FAQ");}}>FAQ</div>
           <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("歷屆作品");}}>歷屆作品</div>
