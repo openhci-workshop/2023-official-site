@@ -1,0 +1,329 @@
+.textbox p {
+    color: #232323;
+    font-size: 12px;
+    text-align: bottom;
+    padding: 0;
+    text-shadow: 0 0 0 #232323;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.textbox h5 {
+    color: #202020;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-left: -3px;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-shadow: 0.5px 0px 0px #202020;
+    transform: scale(.97, 1);
+}
+
+.textbox {
+    text-align: left;
+    margin-left: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardsWrapper {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 0rem;
+    cursor: pointer;
+    height: 100%;
+    z-index: 4;
+    position: relative;
+    top: -30px;
+}
+
+
+.leftButton {
+    margin-left: -3rem;
+}
+
+.rightButton {
+    margin-right: -3rem;
+}
+
+.cardsContainer {
+    display: flex;
+    align-items: flex-end;
+    /* Align items at the bottom */
+    justify-content: center;
+    height: 25rem;
+}
+
+.box {
+    align-items: flex-start;
+    width: 19rem;
+    height: 32rem;
+    //box-shadow: 0px 0px 2rem 0px #888888;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(
+        90deg,
+        rgba(250, 193, 119, 1) 1.04%, 
+        rgba(236, 161, 139, 11) 19.27%,
+        rgba(223, 132, 158, 1) 33.33%, 
+        #D165B2 49.48%, rgba(176, 81, 195, 1) 68.23%, 
+        rgba(115, 85, 202, 1) 85.42%, 
+        rgba(69, 88, 207, 1) 100%
+    );
+    flex-direction: column;
+}
+
+.boxImage {
+    width: 98%;
+    margin: auto;
+    margin-bottom: 18px;
+    margin-top: 2px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box:nth-child(4) {
+    transform: scale(1);
+    z-index: 3;
+    -webkit-filter: brightness(1);
+}
+
+.box:nth-child(1),
+.box:nth-child(7) {
+    transform: scale(0.8);
+    z-index: 0;
+    -webkit-filter: brightness(0.4);
+}
+
+.box:nth-child(2),
+.box:nth-child(6) {
+    transform: scale(0.9);
+    z-index: 2;
+    -webkit-filter: brightness(0.8);
+}
+
+
+.box:nth-child(1) {
+    left: 13%;
+}
+.box:nth-child(7) {
+    left: -15%;
+}
+
+.box:nth-child(2) {
+    left: -1%;
+}
+.box:nth-child(6) {
+    left: -1%;
+}
+
+.card__text-content {
+    text-align: left;
+    width: 75%;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.box--hide {
+    display: none;
+}
+
+.move-to-position5-from-left {
+    animation: moveToP5Left 0.7s ease-out;
+}
+
+.move-to-position4-from-left {
+    animation: moveToP4Left 0.7s ease-out;
+}
+
+.move-to-position3-from-left {
+    animation: moveToP3Left 0.7s ease-out;
+}
+
+.move-to-position2-from-left {
+    animation: moveToP2Left 0.7s ease-out;
+}
+
+.move-to-position1-from-left {
+    animation: moveToP1Left 0.7s ease-out;
+}
+
+.move-to-position5-from-right {
+    animation: moveToP5Right 0.7s ease-out;
+}
+
+.move-to-position4-from-right {
+    animation: moveToP4Right 0.7s ease-out;
+}
+
+.move-to-position3-from-right {
+    animation: moveToP3Right 0.7s ease-out;
+}
+
+.move-to-position2-from-right {
+    animation: moveToP2Right 0.7s ease-out;
+}
+
+.move-to-position1-from-right {
+    animation: moveToP1Right 0.7s ease-out;
+}
+
+@keyframes moveToP1Left {
+    0% {
+        transform: scale(0.9) translateX(80%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+
+    100% {
+        transform: scale(0.8) translateX(0%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+}
+
+@keyframes moveToP2Left {
+    from {
+        transform: scale(1) translateX(80%);
+        z-index: 3;
+        -webkit-filter: brightness(1);
+    }
+
+    to {
+        transform: scale(0.9) translateX(0%);
+        z-index: 1;
+        -webkit-filter: brightness(0.6);
+    }
+}
+
+@keyframes moveToP3Left {
+    0% {
+        transform: scale(0.9) translateX(80%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+
+    100% {
+        transform: scale(1) translateX(0%);
+        z-index: 3;
+        -webkit-filter: brightness(1);
+    }
+}
+
+@keyframes moveToP4Left {
+    0% {
+        transform: scale(0.8) translateX(80%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+
+    100% {
+        transform: scale(0.9) translateX(0%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+}
+
+@keyframes moveToP5Left {
+    0% {
+        transform: scale(0.8) translateX(80%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+
+    100% {
+        transform: scale(0.9) translateX(0%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+}
+
+@keyframes moveToP1Right {
+    0% {
+        transform: scale(0.8) translateX(-80%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+
+    100% {
+        transform: scale(0.8) translateX(0%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+}
+
+@keyframes moveToP2Right {
+    from {
+        transform: scale(0.8) translateX(-80%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+
+    to {
+        transform: scale(0.9) translateX(0%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+}
+
+@keyframes moveToP3Right {
+    from {
+        transform: scale(0.9) translateX(-80%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+
+    to {
+        transform: scale(1) translateX(0%);
+        z-index: 3;
+        -webkit-filter: brightness(1);
+    }
+}
+
+@keyframes moveToP4Right {
+    from {
+        transform: scale(1) translateX(-80%);
+        z-index: 3;
+        -webkit-filter: brightness(1);
+    }
+
+    to {
+        transform: scale(0.9) translateX(0%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+}
+
+@keyframes moveToP5Right {
+    from {
+        transform: scale(0.9) translateX(-80%);
+        z-index: 2;
+        -webkit-filter: brightness(0.6);
+    }
+
+    to {
+        transform: scale(0.8) translateX(0%);
+        z-index: 0;
+        -webkit-filter: brightness(0.4);
+    }
+}
