@@ -771,17 +771,13 @@
 						"content": ["金級"]
 					},
 					{
-						"type": "grid",
+						"type": "grid-center",
 						"level": 1,
 						"content": [
 							{
 								"type": "image",
 								"level": 1,
-								"content": ["/sponsors/gold_optoma.png"],
-								"dimension": {
-									"width": 190,
-									"height": 100
-								}
+								"content": ["/sponsors/gold_optoma.png"]
 							}
 						]
 					}
@@ -797,44 +793,33 @@
 						"content": ["銀級"]
 					},
 					{
-						"type": "grid",
+						"type": "grid-center",
 						"level": 1,
 						"content": [
 							{
 								"type": "image",
 								"level": 1,
-								"content": ["/sponsors/silver_23Design.png"],
-								"dimension": {
-									"width": 250,
-									"height": 250
-								}
+								"content": ["/sponsors/silver_23Design.png"]
 							},
 							{
 								"type": "image",
 								"level": 1,
-								"content": ["/sponsors/silver_AJA.jpg"],
-								"dimension": {
-									"width": 146,
-									"height": 100
-								}
+								"content": ["/sponsors/silver_AJA.jpg"]
 							},
 							{
 								"type": "image",
 								"level": 1,
-								"content": ["/sponsors/silver_NCCU.png"],
-								"dimension": {
-									"width": 159,
-									"height": 100
-								}
+								"content": ["/sponsors/silver_NCCU.png"]
 							},
 							{
 								"type": "image",
 								"level": 1,
-								"content": ["/sponsors/silver_NTU.jpg"],
-								"dimension": {
-									"width": 346,
-									"height": 100
-								}
+								"content": ["/sponsors/silver_NTU.jpg"]
+							},
+							{
+								"type": "image",
+								"level": 1,
+								"content": ["/sponsors/silver_104.png"]
 							}
 						]
 					}
