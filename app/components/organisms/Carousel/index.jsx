@@ -78,7 +78,7 @@ const Carousel = () => {
                                         <a href="https://www.shengdongzhao.com/" target="_blank">
                                             <div className={styles.textbox}>
                                                 <h5>林承毅</h5>
-                                                <p>林事務所執行長</p>
+                                                <p>林事務所 執行長</p>
                                                 <p>政大傳院 兼任講師</p>
                                             </div>
                                         </a>
