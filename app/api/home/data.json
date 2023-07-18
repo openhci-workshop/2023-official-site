@@ -602,7 +602,7 @@
 					{
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["歐陽德倫"] }, "台灣大學 機械系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["歐陽德倫"] }, "台灣大學 機械系", {"type": "link", "level": 1, "content": ["https://www.instagram.com/telun_photo/"]}]
 					},
           {
 						"type": "name",
@@ -675,12 +675,12 @@
 					{
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["何明明"] }, "台灣大學 心理系工商組"]
+						"content": [{ "type": "bold", "level": 1, "content": ["何明明"] }, "台灣大學 心理系工商組", {"type": "link", "level": 1, "content": ["https://www.facebook.com/mingsquare0120/"]}]
 					},
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["萬庭容"] }, "台灣藝術大學 視覺傳達設計系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["萬庭容"] }, "台灣藝術大學 視覺傳達設計系", {"type": "link", "level": 1, "content": ["http://www.linkedin.com/in/wandesigner"]}]
 					},
           {
 						"type": "name",
@@ -761,6 +761,28 @@
 		"title_zh": "贊助單位",
 		"title_en": "Sponsors",
 		"blocks": [
+			{
+				"type": "h5",
+				"level": 1,
+				"content": [
+					{
+						"type": "h4",
+						"level": 1,
+						"content": ["白金級"]
+					},
+					{
+						"type": "grid-center",
+						"level": 1,
+						"content": [
+							{
+								"type": "image-platinum",
+								"level": 1,
+								"content": ["/sponsors/platinum_tobii.png"]
+							}
+						]
+					}
+				]
+			},
 			{
 				"type": "h5",
 				"level": 1,
