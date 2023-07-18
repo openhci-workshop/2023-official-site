@@ -267,10 +267,11 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
       return (
         <div
           key={`${type}-${idx}`}
-          className="flex flex-col gap-0 items-start mt-4"
+          className="flex flex-row md:flex-col gap-4 md:gap-0 items-center md:items-start mt-4"
           style={{ marginLeft: (indentLevel - 1) * 24 }}
         >
-					<img src={"/staff/" + content[0].content[0] + ".jpg"} alt={content[0].content} className="w-20 sm:w-40 md:w-48 lg:w-64" />
+					<img src={"/staff/" + content[0].content[0] + ".jpg"} alt={content[0].content} className="w-20 sm:w-40 md:w-48 lg:w-64 rounded-xl md:rounded-3xl" />
+					<div className='flex flex-col'>
           {content?.map(_content => 
             typeof _content === 'string' ? (
 							<p
@@ -283,7 +284,8 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								{renderHTML(_content.type, _content.content, _content.level)}
 							</a>
 						)
-          )}
+					)}
+					</div>
         </div>
       );
 		case 'date':
