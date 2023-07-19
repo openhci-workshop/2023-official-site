@@ -530,7 +530,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["鄭朝璣"] }, "台北教育大學 數位科技設計學系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭朝璣"] }, "台北教育大學 數位科技設計學系", {"type": "link", "level": 1, "content": ["https://chao-chi.github.io/contact_me/"]}]
 					},
           {
 						"type": "name",
@@ -695,7 +695,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["郭宛欣"] }, "台灣大學 生物產業傳播暨發展學系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["郭宛欣"] }, "台灣大學 生物產業傳播暨發展學系", {"type": "link", "level": 1, "content": ["www.linkedin.com/in/wan-shin-michelle-kuo"]}]
 					},
           {
 						"type": "name",
@@ -842,6 +842,11 @@
 								"type": "image",
 								"level": 1,
 								"content": ["/sponsors/silver_104.png"]
+							},
+							{
+								"type": "image",
+								"level": 1,
+								"content": ["/sponsors/silver_ux.png"]
 							}
 						]
 					}
