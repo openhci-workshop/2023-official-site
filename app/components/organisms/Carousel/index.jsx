@@ -39,25 +39,21 @@ const Carousel = () => {
                                 <img src={`/speakers/speaker${order}.jpg`} className={styles.boxImage} alt={`Speaker Photo ${order}`} />
                                 <div className={classnames(notoSansTC.className, 'font-regular')}>
                                     {order === 1 && (
-                                        <a href="https://www.edchi.net/" target="_blank">
-                                            <div className={styles.textbox}>
-                                                <h5>古健樺</h5>
-                                                <p>政治大學 兼任講師</p>
-                                                <p>黑洞創造 創辦人</p>
-                                            </div>
-                                        </a>
+                                        <div className={styles.textbox}>
+                                            <h5>古健樺</h5>
+                                            <p>政治大學 兼任講師</p>
+                                            <p>黑洞創造 創辦人</p>
+                                        </div>
                                     )}
                                     {order === 2 && (
-                                        <a href="https://www.colorado.edu/atlas/ellen-yi-luen-do" target="_blank">
-                                            <div className={styles.textbox}>
-                                                <h5>曾唯哲</h5>
-                                                <p>UX/UI Designer</p>
-                                                <p>ViewSonic</p>
-                                            </div>
-                                        </a>
+                                        <div className={styles.textbox}>
+                                            <h5>曾唯哲</h5>
+                                            <p>UX/UI Designer</p>
+                                            <p>ViewSonic</p>
+                                        </div>
                                     )}
                                     {order === 3 && (
-                                        <a href="https://www.shengdongzhao.com/" target="_blank">
+                                        <a href="https://www.lungpancheng.tw/" target="_blank">
                                             <div className={styles.textbox}>
                                                 <h5>鄭龍磻</h5>
                                                 <p>國立臺灣大學資訊工程學系</p>
@@ -66,22 +62,18 @@ const Carousel = () => {
                                         </a>
                                     )}
                                     {order === 4 && (
-                                        <a href="https://www.shengdongzhao.com/" target="_blank">
-                                            <div className={styles.textbox}>
-                                                <h5>梁容輝</h5>
-                                                <p>國立台灣科技大學設計系</p>
-                                                <p>副教授</p>
-                                            </div>
-                                        </a>
+                                        <div className={styles.textbox}>
+                                            <h5>梁容輝</h5>
+                                            <p>國立台灣科技大學設計系</p>
+                                            <p>副教授</p>
+                                        </div>
                                     )}
                                     {order === 5 && (
-                                        <a href="https://www.shengdongzhao.com/" target="_blank">
-                                            <div className={styles.textbox}>
-                                                <h5>林承毅</h5>
-                                                <p>林事務所 執行長</p>
-                                                <p>政大傳院 兼任講師</p>
-                                            </div>
-                                        </a>
+                                        <div className={styles.textbox}>
+                                            <h5>林承毅</h5>
+                                            <p>林事務所 執行長</p>
+                                            <p>政大傳院 兼任講師</p>
+                                        </div>
                                     )}
                                 </div>
                             </li>
