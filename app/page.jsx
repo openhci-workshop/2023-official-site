@@ -410,6 +410,103 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 					)}
 				</div>
 			)
+		case 'agenda':
+			return (
+				<div key={`${type}-${idx}`} className='flex flex-col' style={{ marginLeft: (indentLevel - 1) * 24}}>
+					<div className='flex flex-row gap-8 md:gap-16 overflow-scroll'>
+						{content?.map(_content =>
+							typeof _content === 'string' ? (
+								<div key={_content}>
+									{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+								</div>
+							) : (
+								renderHTML(_content.type, _content.content, _content.level)
+							)
+						)}
+					</div>
+				</div>
+			)
+		case 'agenda-day':
+			return (
+				<div key={`${type}-${idx}`} className='flex flex-col min-w-[320px] md:min-w-[480px] p-4 md:p-8 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<div
+								key={_content}
+							>
+								{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+							</div>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			)
+		case 'agenda-day-title':
+			return (
+				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24}}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<p
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className="text-xs md:text-lg text-white leading-looser font-bold tracking-widest mb-2"
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			)
+		case 'agenda-day-col':
+			return (
+				<div key={`${type}-${idx}`} className='' style={{ marginLeft: (indentLevel - 1) * 24 }}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<div
+								key={_content}
+								className='flex flex-row'
+							>
+								{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+							</div>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			)
+		case 'agenda-day-items':
+			return (
+				<div key={`${type}-${idx}`} className='flex flex-row gap-4 md:gap-16' style={{ marginLeft: (indentLevel - 1) * 24}}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<div
+								key={_content}
+							>
+								{content?.map(_content => renderHTML(_content.type, _content.content, _content.level))}
+							</div>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			)
+		case 'agenda-day-item':
+			return (
+				<div key={`${type}-${idx}`} className='' style={{ marginLeft: (indentLevel - 1) * 24, minWidth: "140px"}}>
+					{content?.map(_content =>
+						typeof _content === 'string' ? (
+							<p
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className="text-xs md:text-lg text-white leading-looser tracking-widest"
+							/>
+						) : (
+							renderHTML(_content.type, _content.content, _content.level)
+						)
+					)}
+				</div>
+			)
 		default:
 			return null;
 	}
@@ -478,7 +575,7 @@ const HomePage = async () => {
 				{/* 活動資訊 */}
 				<section className="mb-14 md:mb-28" id="活動資訊">
 					<SectionTitle titleZh="活動資訊" titleEn="" />
-					{content?.slice(4, 6).map(({ title_zh, title_en, blocks }) => (
+					{content?.slice(4, 7).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_zh+title_en}
 							className={classnames(
@@ -499,7 +596,7 @@ const HomePage = async () => {
 				{/* FAQ */}
 				<section className="mb-14 md:mb-28" id="FAQ">
 					<SectionTitle titleZh="" titleEn="FAQ" />
-					{content?.slice(6, 8).map(({ title_zh, title_en, blocks }) => (
+					{content?.slice(7, 9).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_zh+title_en}
 							className={classnames(
@@ -518,7 +615,7 @@ const HomePage = async () => {
 				{/* 歷屆作品 */}
 				<section className="mb-14 md:mb-28" id="歷屆作品">
 					<SectionTitle titleZh="歷屆作品" titleEn="" />
-					{content?.slice(8,9).map(({ title_zh, title_en, blocks }) => (
+					{content?.slice(9, 10).map(({ title_zh, title_en, blocks }) => (
 						<div key={title_zh + title_en}>
 							{blocks?.map(({title, url, description}, idx) => (
 								<WorkPanel title={title} image={works[idx]} url={url} description={description} key={`${title}`} />
@@ -530,7 +627,7 @@ const HomePage = async () => {
 				{/* 組織成員 */}
 				<section className="mb-14 md:mb-28" id="組織成員">
 				<SectionTitle titleZh="組織成員" titleEn="" />
-          {content?.slice(9,10).map(({ title_zh, title_en, blocks }) => (
+          {content?.slice(10, 11).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_zh + title_en}
 							className={classnames(
@@ -544,7 +641,7 @@ const HomePage = async () => {
 							</div>
 						</div>
 					))}
-					{content?.slice(10,11).map(({ title_zh, title_en, blocks }) => (
+					{content?.slice(11, 12).map(({ title_zh, title_en, blocks }) => (
 						<div
 							key={title_zh+title_en}
 							className={classnames(
