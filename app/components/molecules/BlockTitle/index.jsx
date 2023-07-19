@@ -47,7 +47,7 @@ const BlockTitle = ({ titleZh, titleEn }) => {
 	});
 
 	return (
-		<div className={classnames('flex flex-col', styles.blockTitle)} ref={titleRef}>
+		<div className={classnames('flex flex-col tracking-widest', styles.blockTitle)} ref={titleRef}>
 			<h2 className={classnames('flex overflow-hidden', notoSansTC.className)}>
 				{trail.map((style, index) =>
 					index < titleZhItems.length ? (
