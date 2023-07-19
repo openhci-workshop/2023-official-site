@@ -13,7 +13,7 @@ import styles from './styles.module.scss';
 import Logo from '../../../../public/logo_nav.png';
 import AltLogo from '../../../../public/tai_logo.png';
 
-const MIN_WIDTH = 1034;
+const MIN_WIDTH = 1111;
 
 const notoSansTC = Noto_Sans_TC({
 	weight: ['300', '400', '500', '700'],
@@ -30,9 +30,9 @@ const sections = [
   {"y": 350,  "title": "工作坊介紹"},
   {"y": 2900, "title": "主題演講"},
   {"y": 3600, "title": "活動資訊"},
-  {"y": 5800, "title": "FAQ"},
-  {"y": 7800, "title": "歷屆作品"},
-  {"y": 12200, "title": "組織成員"}
+  {"y": 6800, "title": "FAQ"},
+  {"y": 8800, "title": "歷屆作品"},
+  {"y": 13200, "title": "組織成員"}
 ]
 
 const NavBar = () => {
@@ -104,8 +104,8 @@ const NavBar = () => {
               <div className={classnames(aldrich.className,     styles.navItem, active === 'FAQ' && styles.navItem_active,'text-white md:text-base font-regular mx-2 mt-1 tracking-wider')} onClick={() => {scrollToElement("FAQ")}}>FAQ</div>
               <div className={classnames(notoSansTC.className,  styles.navItem, active === '歷屆作品' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("歷屆作品")}}>歷屆作品</div>
               <div className={classnames(notoSansTC.className,  styles.navItem, active === '組織成員' && styles.navItem_active,'text-white md:text-base font-regular mx-2 tracking-wider')} onClick={() => {scrollToElement("組織成員")}}>組織成員</div>
-              <Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
-                <Button className="md: mx-4">立即報名</Button>
+              <Link href="https://www.facebook.com/openhci/posts/pfbid023kR4E2BwuiaBcpSKsSgvqM6z7ANzp9zohhgv5y7JxzoMLgPad2hehHe8V7s41mYfl" target="_blank">
+                <Button className="md: mx-4">錄取名單</Button>
               </Link>
             </nav>
           ) : (
@@ -128,8 +128,8 @@ const NavBar = () => {
           <div className={classnames(aldrich.className,     'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("FAQ");}}>FAQ</div>
           <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("歷屆作品");}}>歷屆作品</div>
           <div className={classnames(notoSansTC.className,  'text-white md:text-base font-regular tracking-wider')} onClick={() => {setNavActive(false); scrollToElement("組織成員");}}>組織成員</div>
-          <Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
-            <Button className="">立即報名</Button>
+          <Link href="https://www.facebook.com/openhci/posts/pfbid023kR4E2BwuiaBcpSKsSgvqM6z7ANzp9zohhgv5y7JxzoMLgPad2hehHe8V7s41mYfl" target="_blank">
+            <Button className="">錄取名單</Button>
           </Link>
         </div>
       </div>

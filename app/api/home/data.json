@@ -99,6 +99,360 @@
 		]
 	},
 	{
+		"title_zh": "詳細日程",
+		"title_en": "Agenda",
+		"blocks": [
+			{
+				"type": "agenda",
+				"level": 1,
+				"content": [
+					{
+						"type": "agenda-day",
+						"level": 1,
+						"content": [
+							{
+								"type": "agenda-day-title",
+								"level": 1,
+								"content": ["/ 前置工作坊 Day1 /"]
+							},
+							{
+								"type": "agenda-day-col",
+								"level": 1,
+								"content": [
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["08:30 - 09:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員報到"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 09:50"]}, {"type": "agenda-day-item", "level": 1, "content": ["開場破冰"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:50 - 10:50"]}, {"type": "agenda-day-item", "level": 1, "content": ["主題介紹"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["11:00 - 12:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["HCI Intro"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["12:00 - 13:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["午餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 13:50"]}, {"type": "agenda-day-item", "level": 1, "content": ["設計思考：Empathize & Define"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["14:00 - 15:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：古健樺老師"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:30 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["17:00 - 18:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["晚餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 - 19:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課程：Unity"]}]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "agenda-day",
+						"level": 1,
+						"content": [
+							{
+								"type": "agenda-day-title",
+								"level": 1,
+								"content": ["/ 前置工作坊 Day2 /"]
+							},
+							{
+								"type": "agenda-day-col",
+								"level": 1,
+								"content": [
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["08:30 - 09:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員報到"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["設計思考：Ideate"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["10:10 - 12:10"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課程：Arduino"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["12:10 - 13:10"]}, {"type": "agenda-day-item", "level": 1, "content": ["午餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:10 - 14:40"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:00 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["小發表"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["17:00 - 18:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["晚餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 - 19:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課程：GUI"]}]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "agenda-day",
+						"level": 1,
+						"content": [
+							{
+								"type": "agenda-day-title",
+								"level": 1,
+								"content": ["/ 正式工作坊 Day1 /"]
+							},
+							{
+								"type": "agenda-day-col",
+								"level": 1,
+								"content": [
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["08:30 - 09:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員報到"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：鄭龍磻老師"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["10:00 - 12:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["12:00 - 13:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["午餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 15:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:00 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["期中提案"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["17:00 - 18:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["晚餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 -"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "agenda-day",
+						"level": 1,
+						"content": [
+							{
+								"type": "agenda-day-title",
+								"level": 1,
+								"content": ["/ 正式工作坊 Day2 /"]
+							},
+							{
+								"type": "agenda-day-col",
+								"level": 1,
+								"content": [
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["08:30 - 09:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員報到"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：梁容輝老師"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["10:40 - 12:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["顧問交流"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["12:00 - 13:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["午餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 15:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:00 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["留學經驗分享"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["17:00 - 18:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["晚餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 -"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "agenda-day",
+						"level": 1,
+						"content": [
+							{
+								"type": "agenda-day-title",
+								"level": 1,
+								"content": ["/ 正式工作坊 Day3 /"]
+							},
+							{
+								"type": "agenda-day-col",
+								"level": 1,
+								"content": [
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["08:30 - 09:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員報到"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 12:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["12:00 - 13:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["午餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 14:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：林承毅老師"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["14:30 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["17:00 - 18:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["晚餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 -"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "agenda-day",
+						"level": 1,
+						"content": [
+							{
+								"type": "agenda-day-title",
+								"level": 1,
+								"content": ["/ 正式工作坊 Day4 /"]
+							},
+							{
+								"type": "agenda-day-col",
+								"level": 1,
+								"content": [
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["08:30 - 09:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員報到"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 11:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["學員討論"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["11:00 - 12:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["會場佈置"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["12:00 - 13:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["午餐"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 15:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["期末發表"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:30 - 17:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["互動成果展示"]}]
+									},
+									{
+										"type": "agenda-day-items",
+										"level": 1,
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["17:30 - 18:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["閉幕"]}]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
 		"title_zh": "報名方式",
 		"title_en": "Registration",
 		"blocks": [
@@ -448,6 +802,11 @@
 						"type": "name",
 						"level": 1,
 						"content": [{ "type": "bold", "level": 1, "content": ["溫詠淳"] }, "清華大學 教育學院學士班"]
+					},
+          {
+						"type": "name",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["高子芹"] }, "政治大學 廣告系/數位內容"]
 					}
 				]
 			},
@@ -695,7 +1054,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["郭宛欣"] }, "台灣大學 生物產業傳播暨發展學系", {"type": "link", "level": 1, "content": ["www.linkedin.com/in/wan-shin-michelle-kuo"]}]
+						"content": [{ "type": "bold", "level": 1, "content": ["郭宛欣"] }, "台灣大學 生物產業傳播暨發展學系", {"type": "link", "level": 1, "content": ["https://www.linkedin.com/in/wan-shin-michelle-kuo/"]}]
 					},
           {
 						"type": "name",
