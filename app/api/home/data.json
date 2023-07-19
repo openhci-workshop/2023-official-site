@@ -940,7 +940,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["盧姳儒"] }, "台灣科技大學 設計系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["盧姳儒"] }, "台灣科技大學 設計系", {"type": "link", "level": 1, "content": ["https://www.linkedin.com/in/mingru-lu/"]}]
 					}
 				]
 			},
@@ -1064,7 +1064,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["張懿萱"] }, "雲林科技大學 數位媒體設計系互動科技組"]
+						"content": [{ "type": "bold", "level": 1, "content": ["張懿萱"] }, "雲林科技大學 數位媒體設計系互動科技組", {"type": "link", "level": 1, "content": ["https://instagram.com/chang_i_hsuan_?igshid=MzNlNGNkZWQ4Mg=="]}]
 					}
 				]
 			},
@@ -1085,7 +1085,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["邱馨論"] }, "中央大學 資訊管理學系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["邱馨論"] }, "中央大學 資訊管理學系", {"type": "link", "level": 1, "content": ["https://www.linkedin.com/in/hsinlun-chiu/"]}]
 					},
           {
 						"type": "name",
