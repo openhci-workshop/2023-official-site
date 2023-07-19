@@ -401,7 +401,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 								dangerouslySetInnerHTML={{ __html: _content }}
 								className={classnames(
 									aldrich.className,
-									'text-lg md:text-2xl font-semibold tracking-widest'
+									'text-base md:text-2xl font-semibold tracking-widest'
 								)}
 							/>
 						) : (
