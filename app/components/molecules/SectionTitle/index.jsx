@@ -46,7 +46,7 @@ const SectionTitle = ({ className, titleZh, titleEn }) => {
 	});
 
 	return (
-		<div className={classnames('flex flex-col', className)} ref={titleRef}>
+		<div className={classnames('flex flex-col tracking-widest', className)} ref={titleRef}>
 			<h1
 				className={classnames(
 					notoSansTC.className,
