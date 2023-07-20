@@ -428,7 +428,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			)
 		case 'agenda-day':
 			return (
-				<div key={`${type}-${idx}`} className='flex flex-col min-w-[320px] md:min-w-[480px] p-4 md:p-8 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
+				<div key={`${type}-${idx}`} className='flex flex-col min-w-[280px] md:min-w-[480px] p-6 md:p-8 mb-2 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
 					{content?.map(_content =>
 						typeof _content === 'string' ? (
 							<div
@@ -493,7 +493,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			)
 		case 'agenda-day-item':
 			return (
-				<div key={`${type}-${idx}`} className='md:min-w-[140px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
+				<div key={`${type}-${idx}`} className='min-w-[100px] md:min-w-[140px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
 					{content?.map(_content =>
 						typeof _content === 'string' ? (
 							<p
@@ -532,9 +532,9 @@ const HomePage = async () => {
 							"flex flex-row space-x-4 md:space-x-8 mb-8 items-start"
 						)
 					}>
-						<Link href="https://forms.gle/ckxGwYdGASKPyw1s9" target="_blank">
+						<Link href="https://www.facebook.com/openhci/posts/pfbid023kR4E2BwuiaBcpSKsSgvqM6z7ANzp9zohhgv5y7JxzoMLgPad2hehHe8V7s41mYfl" target="_blank">
 							<Button className="z-0" variant="normal">
-								立即報名
+								錄取名單
 							</Button>
 						</Link>
 					</div>

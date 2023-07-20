@@ -147,7 +147,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 13:50"]}, {"type": "agenda-day-item", "level": 1, "content": ["設計思考：Empathize & Define"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 13:50"]}, {"type": "agenda-day-item", "level": 1, "content": ["設計思考(1)"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -194,7 +194,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["設計思考：Ideate"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["設計思考(2)"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -1044,7 +1044,7 @@
           {
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["林佳嫺"] }, "台北科技大學 互動設計系"]
+						"content": [{ "type": "bold", "level": 1, "content": ["林佳嫺"] }, "台北科技大學 互動設計系", {"type": "link", "level": 1, "content": ["https://www.facebook.com/jia.xian.94801?mibextid=LQQJ4d"]}]
 					},
           {
 						"type": "name",
