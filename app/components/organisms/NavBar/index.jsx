@@ -27,9 +27,9 @@ const aldrich = Aldrich({
 
 const sections = [
   {"y": 0,  "title": ""},
-  {"y": 350,  "title": "工作坊介紹"},
+  {"y": 650,  "title": "工作坊介紹"},
   {"y": 2900, "title": "主題演講"},
-  {"y": 3600, "title": "活動資訊"},
+  {"y": 3700, "title": "活動資訊"},
   {"y": 6800, "title": "FAQ"},
   {"y": 8800, "title": "歷屆作品"},
   {"y": 13200, "title": "組織成員"}
@@ -76,7 +76,8 @@ const NavBar = () => {
 
   function scrollToElement(id) {
     const element = document.getElementById(id); // Replace 'targetElement' with the ID of the element you want to scroll to
-    const offsetTop = element.offsetTop;
+    const motionOffset = width > MIN_WIDTH ? 550 : 300
+    const offsetTop = element.offsetTop + motionOffset;
     window.scrollTo({
       top: offsetTop,
       behavior: 'smooth' // Add smooth scrolling behavior
