@@ -663,6 +663,7 @@ const HomePage = async () => {
 						COPYRIGHT © 2023 OpenHCI
 					</div>
 					<div className="text-xs md:text-base text-center leading-6 z-10">
+						/ <span><a href="https://www.facebook.com/openhci">facebook</a></span>{' '}
 						/ <span><a href="https://www.2022.openhci.com">2022</a></span>{' '}
 						/ <span><a href="https://www.2021.openhci.com">2021</a></span>{' '}
 						/ <span><a href="https://www.2019.openhci.com">2019</a></span>{' '}
