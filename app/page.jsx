@@ -517,7 +517,7 @@ const HomePage = async () => {
 	const content = await fetchContent();
 
 	return (
-		<>
+		<div className={classnames(styles.background)}>
 			<NavBar />
 
       <div className="w-screen h-full fixed left-0 top-0 z-10">
@@ -527,7 +527,7 @@ const HomePage = async () => {
 			<div
 				className={classnames(
 						styles.heroBackdrop,
-						"flex flex-col items-start py-6 md:py-12 relative z-0"
+						"flex flex-col items-start py-6 md:py-12 relative z-10"
 					)}
           id="header"
       >
@@ -686,7 +686,7 @@ const HomePage = async () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
