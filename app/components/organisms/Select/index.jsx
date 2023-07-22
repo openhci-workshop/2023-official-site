@@ -31,7 +31,7 @@ const index = ({items}) => {
       {
         items.map((item, index) => (
           <div
-            key={item.name + index}
+            key={item.name + (index+1) * 2}
             onClick={() => scrollToElement(item.id)}
             className='
               hover:text-[#D165B2]

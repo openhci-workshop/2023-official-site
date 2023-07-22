@@ -23,13 +23,16 @@ export const Threejs = () => {
   const [initY, setInitY] = useState(0)
   const [maxPos, setMaxPos] = useState(10)
   const [scale, setScale] = useState(1)
+  const [mobile, setMobile] = useState(false)
 
   const onResize = () => {
+    setMobile(false)
     if (window.innerWidth <= MD) {
       setInitX(2)
       setInitY(-3)
       setMaxPos(3)
       setScale(0.7)
+      setMobile(true)
     }
     else if (window.innerWidth <= LG) {
       setInitX(4)
@@ -113,7 +116,7 @@ export const Threejs = () => {
     <Canvas orthographic camera={{ position: [6, -5, 10], zoom: 60 }}>
       <ambientLight />
       <directionalLight castShadow intensity={0.6} position={[0, 0, 10]} />
-      <Scene scale={scale} ref={meshRef} position={[initX, initY, 0]}/>
+      <Scene scale={scale} ref={meshRef} position={[initX, initY, 0]} mobile={mobile} />
     </Canvas>
   )
 }
@@ -152,7 +155,7 @@ export const Scene = forwardRef(function(props, ref) {
           occlude
         >
           <div style={{backgroundColor: "transparent"}}>
-            <iframe width={800} height={800} className="bg-transparent" src="./explore/main.html" />
+            <iframe width={800} height={800} className="bg-transparent" src={props.mobile ? "./explore/explore.png" : "./explore/main.html"} />
           </div>
         </Html>
       </group>
