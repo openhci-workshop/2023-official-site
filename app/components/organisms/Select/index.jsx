@@ -35,10 +35,8 @@ const index = ({items}) => {
             onClick={() => scrollToElement(item.id)}
             className='
               hover:text-[#D165B2]
-              hover:font-bold
               hover:underline
               active:text-[#D165B2]
-              active:font-bold
               active:underline
             '
             style={{
