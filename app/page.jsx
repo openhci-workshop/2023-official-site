@@ -9,6 +9,7 @@ import SectionTitle from '@/components/molecules/SectionTitle';
 import BlockTitle from '@/components/molecules/BlockTitle';
 import WorkPanel from '@/components/molecules/WorkPanel';
 import Carousel from '@/components/organisms/Carousel';
+import Select from '@/components/organisms/Select';
 
 import logo from '../public/logo_hero.png';
 import cube from '../public/open_cube.png';
@@ -21,6 +22,7 @@ import work4 from '../public/work/work4.png';
 import work5 from '../public/work/work5.png';
 import work6 from '../public/work/work6.png';
 import work7 from '../public/work/work7.png';
+import Threejs from './components/organisms/Motion';
 
 const works = [
 	work1,
@@ -30,6 +32,33 @@ const works = [
 	work5,
 	work6,
 	work7,
+]
+
+const agendaItemsList = [
+	{
+		name: "前置 D1",
+		id: "/ 前置工作坊 Day1 /"
+	},
+	{
+		name: "前置 D2",
+		id: "/ 前置工作坊 Day2 /"
+	},
+	{
+		name: "正式 D1",
+		id: "/ 正式工作坊 Day1 /"
+	},
+	{
+		name: "正式 D2",
+		id: "/ 正式工作坊 Day2 /"
+	},
+	{
+		name: "正式 D3",
+		id: "/ 正式工作坊 Day3 /"
+	},
+	{
+		name: "正式 D4",
+		id: "/ 正式工作坊 Day4 /"
+	},
 ]
 
 export const metadata = {
@@ -413,7 +442,10 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 		case 'agenda':
 			return (
 				<div key={`${type}-${idx}`} className='flex flex-col' style={{ marginLeft: (indentLevel - 1) * 24}}>
-					<div className='flex flex-row gap-8 md:gap-16 overflow-scroll'>
+					<div className='flex flex-row justify-center w-full '>
+						<Select items={agendaItemsList} />
+					</div>
+					<div id="agenda" className='flex flex-row gap-8 md:gap-16 overflow-scroll'>
 						{content?.map(_content =>
 							typeof _content === 'string' ? (
 								<div key={_content}>
@@ -428,7 +460,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			)
 		case 'agenda-day':
 			return (
-				<div key={`${type}-${idx}`} className='flex flex-col min-w-[280px] md:min-w-[480px] p-6 md:p-8 mb-2 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
+				<div id={content[0].content[0]} key={`${type}-${idx}`} className='flex flex-col min-w-[280px] md:min-w-[480px] p-6 md:p-8 mb-2 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
 					{content?.map(_content =>
 						typeof _content === 'string' ? (
 							<div
@@ -516,15 +548,20 @@ const HomePage = async () => {
 	const content = await fetchContent();
 
 	return (
-		<>
+		<div className={classnames(styles.background)}>
 			<NavBar />
+
+      <div className="w-screen h-full fixed left-0 top-0 z-10">
+        <Threejs />
+      </div>
 
 			<div
 				className={classnames(
 						styles.heroBackdrop,
-						"flex flex-col items-start py-6 md:py-12"
+						"flex flex-col items-start py-6 md:py-12 relative z-10"
 					)}
-			>
+          id="header"
+      >
 				<div className={classnames("container w-screen mx-auto px-6 md:px-8")}>
 					<Image src={logo} alt="logo" className={classnames(styles.logo, "h-auto w-full md:w-1/2 lg:w-3/7 mt-4 mb-8")} />
 					<div className={
@@ -541,12 +578,12 @@ const HomePage = async () => {
 				</div>
 			</div>
 
-			<Image src={cube} alt="cube" className={classnames(styles.cube, "h-auto w-1/2 md:w-1/3")} />
+			{/* <Image src={cube} alt="cube" className={classnames(styles.cube, "h-auto w-1/2 md:w-1/3")} /> */}
 
-			<div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36">
+			<div className="container mx-auto px-6 md:px-8 py-8 md:py-24 lg:py-36 relative z-20">
 
 				{/* 工作坊介紹 */}
-				<section className="mb-14 md:mb-28" id="工作坊介紹">
+				<section className="mb-14 md:mb-28" id="introduction">
 					<SectionTitle titleZh="工作坊介紹" titleEn="" />
 					{content?.slice(0, 4).map(({ title_zh, title_en, blocks }) => (
 						<div
@@ -565,7 +602,7 @@ const HomePage = async () => {
 				</section>
 
 				{/* 主題演講 */}
-				<section className="mb-14 md:mb-28" id="主題演講">
+				<section className="mb-14 md:mb-28" id="talks">
 				<SectionTitle titleZh="主題演講" titleEn="" />
 					<div className={classnames(styles.carousel, 'flex justify-center items-center m-24')}>
 						<Carousel />
@@ -573,7 +610,7 @@ const HomePage = async () => {
 				</section>
 
 				{/* 活動資訊 */}
-				<section className="mb-14 md:mb-28" id="活動資訊">
+				<section className="mb-14 md:mb-28" id="about">
 					<SectionTitle titleZh="活動資訊" titleEn="" />
 					{content?.slice(4, 7).map(({ title_zh, title_en, blocks }) => (
 						<div
@@ -613,7 +650,7 @@ const HomePage = async () => {
 				</section>
 
 				{/* 歷屆作品 */}
-				<section className="mb-14 md:mb-28" id="歷屆作品">
+				<section className="mb-14 md:mb-28" id="works">
 					<SectionTitle titleZh="歷屆作品" titleEn="" />
 					{content?.slice(9, 10).map(({ title_zh, title_en, blocks }) => (
 						<div key={title_zh + title_en}>
@@ -625,7 +662,7 @@ const HomePage = async () => {
 				</section >
 
 				{/* 組織成員 */}
-				<section className="mb-14 md:mb-28" id="組織成員">
+				<section className="mb-14 md:mb-28" id="organizers">
 				<SectionTitle titleZh="組織成員" titleEn="" />
           {content?.slice(10, 11).map(({ title_zh, title_en, blocks }) => (
 						<div
@@ -663,6 +700,7 @@ const HomePage = async () => {
 						COPYRIGHT © 2023 OpenHCI
 					</div>
 					<div className="text-xs md:text-base text-center leading-6 z-10">
+						/ <span><a href="https://www.facebook.com/openhci">facebook</a></span>{' '}
 						/ <span><a href="https://www.2022.openhci.com">2022</a></span>{' '}
 						/ <span><a href="https://www.2021.openhci.com">2021</a></span>{' '}
 						/ <span><a href="https://www.2019.openhci.com">2019</a></span>{' '}
@@ -679,7 +717,7 @@ const HomePage = async () => {
 					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

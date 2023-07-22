@@ -35,7 +35,7 @@ const Carousel = () => {
                                     <Button iconPath="/speakers/leftvector.png"> </Button>
                                 </div>
                             )}
-                            <li key={order} className={`${styles.box} ${styles[`box${order}`]}  ${direction === 'left' ? styles[`move-to-position${index + 1}-from-left`] : styles[`move-to-position${index + 1}-from-right`]}`}>
+                            <li key={order + (index+1)*2} className={`${styles.box} ${styles[`box${order}`]}  ${direction === 'left' ? styles[`move-to-position${index + 1}-from-left`] : styles[`move-to-position${index + 1}-from-right`]}`}>
                                 <img src={`/speakers/speaker${order}.jpg`} className={styles.boxImage} alt={`Speaker Photo ${order}`} />
                                 <div className={classnames(notoSansTC.className, 'font-regular')}>
                                     {order === 1 && (
