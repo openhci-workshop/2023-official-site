@@ -445,7 +445,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 					<div className='flex flex-row justify-center w-full '>
 						<Select items={agendaItemsList} />
 					</div>
-					<div id="agenda" className='flex flex-row gap-8 md:gap-16 overflow-scroll'>
+					<div id="agenda" className='flex flex-row gap-8 md:gap-16 overflow-x-scroll overflow-y-hidden'>
 						{content?.map(_content =>
 							typeof _content === 'string' ? (
 								<div key={_content}>
