@@ -9,6 +9,7 @@ import SectionTitle from '@/components/molecules/SectionTitle';
 import BlockTitle from '@/components/molecules/BlockTitle';
 import WorkPanel from '@/components/molecules/WorkPanel';
 import Carousel from '@/components/organisms/Carousel';
+import Select from '@/components/organisms/Select';
 
 import logo from '../public/logo_hero.png';
 import cube from '../public/open_cube.png';
@@ -31,6 +32,33 @@ const works = [
 	work5,
 	work6,
 	work7,
+]
+
+const agendaItemsList = [
+	{
+		name: "前置 D1",
+		id: "/ 前置工作坊 Day1 /"
+	},
+	{
+		name: "前置 D2",
+		id: "/ 前置工作坊 Day2 /"
+	},
+	{
+		name: "正式 D1",
+		id: "/ 正式工作坊 Day1 /"
+	},
+	{
+		name: "正式 D2",
+		id: "/ 正式工作坊 Day2 /"
+	},
+	{
+		name: "正式 D3",
+		id: "/ 正式工作坊 Day3 /"
+	},
+	{
+		name: "正式 D4",
+		id: "/ 正式工作坊 Day4 /"
+	},
 ]
 
 export const metadata = {
@@ -414,7 +442,10 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 		case 'agenda':
 			return (
 				<div key={`${type}-${idx}`} className='flex flex-col' style={{ marginLeft: (indentLevel - 1) * 24}}>
-					<div className='flex flex-row gap-8 md:gap-16 overflow-scroll'>
+					<div className='flex flex-row justify-center w-full '>
+						<Select items={agendaItemsList} />
+					</div>
+					<div id="agenda" className='flex flex-row gap-8 md:gap-16 overflow-scroll'>
 						{content?.map(_content =>
 							typeof _content === 'string' ? (
 								<div key={_content}>
@@ -429,7 +460,7 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 			)
 		case 'agenda-day':
 			return (
-				<div key={`${type}-${idx}`} className='flex flex-col min-w-[280px] md:min-w-[480px] p-6 md:p-8 mb-2 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
+				<div id={content[0].content[0]} key={`${type}-${idx}`} className='flex flex-col min-w-[280px] md:min-w-[480px] p-6 md:p-8 mb-2 rounded-xl md:rounded-3xl border-white border-[0.5px]' style={{ marginLeft: (indentLevel - 1) * 24 }}>
 					{content?.map(_content =>
 						typeof _content === 'string' ? (
 							<div

@@ -1080,7 +1080,7 @@
 					{
 						"type": "name",
 						"level": 1,
-						"content": [{ "type": "bold", "level": 1, "content": ["郭又嘉"] }, "台灣師範大學 音樂科技跨域合作組"]
+						"content": [{ "type": "bold", "level": 1, "content": ["郭又嘉"] }, "台灣師範大學 音樂科技跨域合作組", {"type": "link", "level": 1, "content": ["https://on.soundcloud.com/eU388"]}]
 					},
           {
 						"type": "name",

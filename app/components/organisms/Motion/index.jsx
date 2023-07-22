@@ -120,10 +120,11 @@ export const Threejs = () => {
 
 // eslint-disable-next-line react/display-name
 export const Scene = forwardRef(function(props, ref) {
+
   const config = {
     backside: false,
     samples: 16,
-    resolution: 256,
+    resolution: 1024,
     transmission: 0.98,
     roughness: 0.1,
     clearcoat: 0.1,
@@ -137,8 +138,8 @@ export const Scene = forwardRef(function(props, ref) {
     distortionScale: 0.2,
     temporalDistortion: 0,
     attenuationDistance: 0.5,
-    attenuationColor: '#4b8d2d',
-    color: '#4b8d2d',
+    attenuationColor: '#D165B2',
+    color: '#D165B2',
   }
 
   return (
