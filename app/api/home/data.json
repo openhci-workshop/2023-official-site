@@ -152,7 +152,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["14:00 - 15:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：古健樺老師"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["14:00 - 15:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講(古健樺)"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -167,7 +167,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 - 19:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課程：Unity"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 - 19:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課(Unity)"]}]
 									}
 								]
 							}
@@ -199,7 +199,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["10:10 - 12:10"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課程：Arduino"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["10:10 - 12:10"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課(Arduino)"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -224,7 +224,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 - 19:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課程：GUI"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["18:00 - 19:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["工具課(GUI)"]}]
 									}
 								]
 							}
@@ -251,7 +251,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：鄭龍磻老師"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講(鄭龍磻)"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -308,7 +308,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：梁容輝老師"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["09:00 - 10:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講(梁容輝)"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -328,7 +328,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:00 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["留學經驗分享"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["15:00 - 17:00"]}, {"type": "agenda-day-item", "level": 1, "content": ["留學分享"]}]
 									},
 									{
 										"type": "agenda-day-items",
@@ -375,7 +375,7 @@
 									{
 										"type": "agenda-day-items",
 										"level": 1,
-										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 14:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講：林承毅老師"]}]
+										"content": [{"type": "agenda-day-item", "level": 1, "content": ["13:00 - 14:30"]}, {"type": "agenda-day-item", "level": 1, "content": ["演講(林承毅)"]}]
 									},
 									{
 										"type": "agenda-day-items",
