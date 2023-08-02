@@ -11,17 +11,17 @@ const notoSansTC = Noto_Sans_TC({
 });
 
 const Carousel = () => {
-    const [contentOrder, setContentOrder] = useState([1, 2, 3, 4, 5]);
+    const [contentOrder, setContentOrder] = useState([1, 2, 3, 4, 5, 6, 7]);
     const [direction, setDirection] = useState(null);
 
     const shiftLeft = () => {
         setDirection('left');
-        setContentOrder(prevOrder => [prevOrder[1], prevOrder[2], prevOrder[3], prevOrder[4], prevOrder[0]]);
+        setContentOrder(prevOrder => [prevOrder[1], prevOrder[2], prevOrder[3], prevOrder[4], prevOrder[5], prevOrder[6], prevOrder[0]]);
     };
 
     const shiftRight = () => {
         setDirection('right');
-        setContentOrder(prevOrder => [prevOrder[4], prevOrder[0], prevOrder[1], prevOrder[2], prevOrder[3]]);
+        setContentOrder(prevOrder => [prevOrder[6], prevOrder[0], prevOrder[1], prevOrder[2], prevOrder[3], prevOrder[4], prevOrder[5]]);
     };
 
     return (
@@ -30,7 +30,7 @@ const Carousel = () => {
                 <ul className={styles.cardsContainer}>
                     {contentOrder.map((order, index) => (
                         <React.Fragment key={order}>
-                            {index === 2 && (
+                            {index === 3 && (
                                 <div className={`${styles.button} ${styles.leftButton}`} onClick={shiftLeft}>
                                     <Button iconPath="/speakers/leftvector.png"> </Button>
                                 </div>
@@ -75,9 +75,23 @@ const Carousel = () => {
                                             <p>政大傳院 兼任講師</p>
                                         </div>
                                     )}
+                                    {order === 6 && (
+                                        <div className={styles.textbox}>
+                                            <h5>林愷澤</h5>
+                                            <p>Bellwether Industries</p>
+                                            <p>共同創辦人兼營運長</p>
+                                        </div>
+                                    )}
+                                    {order === 7 && (
+                                        <div className={styles.textbox}>
+                                            <h5>李其蓉</h5>
+                                            <p>Ph.D Student</p>
+                                            <p>Cornell University Information Science</p>
+                                        </div>
+                                    )}
                                 </div>
                             </li>
-                            {index === 2 && (
+                            {index === 3 && (
                                 <div className={`${styles.button} ${styles.rightButton}`} onClick={shiftRight}>
                                     <Button iconPath="/speakers/rightvector.png"> </Button>
                                 </div>
