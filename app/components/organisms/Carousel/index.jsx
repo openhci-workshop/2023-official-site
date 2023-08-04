@@ -71,8 +71,9 @@ const Carousel = () => {
                                     {order === 5 && (
                                         <div className={styles.textbox}>
                                             <h5>林承毅</h5>
-                                            <p>林事務所 執行長</p>
-                                            <p>政大傳院 兼任講師</p>
+                                            <p>林 事務所 執行長 服務設計師</p>
+                                            <p>國立政治大學傳院/社會學系 兼任講師</p>
+                                            <p>資深體驗設計顧問</p>
                                         </div>
                                     )}
                                     {order === 6 && (
