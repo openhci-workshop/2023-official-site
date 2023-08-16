@@ -1118,6 +1118,67 @@
 						"content": [{ "type": "bold", "level": 1, "content": ["鄭芳雯"] }, "台灣大學 工程科學及海洋工程學系"]
 					}
 				]
+			},
+			{
+        "type": "h2",
+        "level": 1,
+        "content": ["/ 志工 /"]
+      },
+      {
+				"type": "grid",
+				"level": 1,
+				"content": [
+					{
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["許堯鈞"] }, "攝影志工"]
+					},
+          {
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["何霈楹"] }, "攝影志工"]
+					},
+          {
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["江昀容"] }, "攝影志工"]
+					},
+          {
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["林孟儒"] }, "演講志工"]
+					},
+          {
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["李宥潔"] }, "演講志工"]
+					},
+          {
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["張庭華"] }, "技術志工"]
+					},
+          {
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["鄭羿宣"] }, "人事志工"]
+					},
+					{
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["王溫鈴"] }, "人事志工"]
+					},
+					{
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["高薈媖"] }, "人事志工"]
+					},
+					{
+						"type": "name-v",
+						"level": 1,
+						"content": [{ "type": "bold", "level": 1, "content": ["胡芝瑀"] }, "人事志工"]
+					}
+				]
 			}
     ]
 	},

@@ -346,6 +346,30 @@ function renderHTML(type, content, indentLevel, idx = Math.random()) {
 					</div>
         </div>
       );
+		case 'name-v':
+			return (
+				<div
+					key={`${type}-${idx}`}
+					className="flex flex-row md:flex-col gap-4 md:gap-0 items-center md:items-start mt-4"
+					style={{ marginLeft: (indentLevel - 1) * 24 }}
+				>
+					<div className='flex flex-col'>
+					{content?.map(_content => 
+						typeof _content === 'string' ? (
+							<p
+								key={_content}
+								dangerouslySetInnerHTML={{ __html: _content }}
+								className="text-xs md:text-lg text-white leading-looser font-normal tracking-widest"
+							/>
+						) : (
+							<a key={_content} className={classnames(`${content[2] && "underline"}`)} href={content[2]?.content[0]} target="_blank" rel="noreferrer" style={content[2] && {cursor: "pointer"}}>
+								{renderHTML(_content.type, _content.content, _content.level)}
+							</a>
+						)
+					)}
+					</div>
+				</div>
+			);
 		case 'date':
 			return (
 				<div key={`${type}-${idx}`} style={{ marginLeft: (indentLevel - 1) * 24 }}>
