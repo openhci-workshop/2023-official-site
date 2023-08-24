@@ -21,8 +21,8 @@ const aldrich = Aldrich({
 
 const WorkPanel = ({ title, image, url, description, leftFunction, rightFunction }) => (
   <div className={classnames(styles.blockBackdrop, "relative flex flex-row w-full items-center px-3 md:px-6")}>
-    <div className={`${styles.button} ${styles.leftButton}`} onClick={() => leftFunction()}>
-      <Button iconPath="/speakers/leftvector.png"> </Button>
+    <div className={classnames(styles.button)} onClick={() => leftFunction()}>
+      <Button iconPath="/speakers/leftvector.png"></Button>
     </div>
     <div className={classnames("relative w-full flex flex-col md:flex-row px-4 md:px-8 xl:px-24 py-6 md:py-10 xl:py-20")}>
       <div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
@@ -51,8 +51,8 @@ const WorkPanel = ({ title, image, url, description, leftFunction, rightFunction
         </p>
       </div>
     </div>
-    <div className={`${styles.button} ${styles.rightButton}`} onClick={() => rightFunction()}>
-      <Button iconPath="/speakers/rightvector.png"> </Button>
+    <div className={classnames(styles.button)} onClick={() => rightFunction()}>
+      <Button iconPath="/speakers/rightvector.png"></Button>
     </div>
   </div>
 );

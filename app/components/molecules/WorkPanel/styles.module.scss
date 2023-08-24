@@ -36,14 +36,10 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	height: 100%;
-}
-
-
-.leftButton {
-
-}
-
-.rightButton {
-
+	z-index: 5;
+	
+	@media screen and (max-width: 767px) {
+		width: 0px;
+		height: 0px;
+	}
 }
