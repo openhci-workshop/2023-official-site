@@ -7,7 +7,7 @@ import { Noto_Sans_TC, Nunito_Sans, Aldrich } from 'next/font/google';
 import NavBar from '@/components/organisms/NavBar';
 import SectionTitle from '@/components/molecules/SectionTitle';
 import BlockTitle from '@/components/molecules/BlockTitle';
-import WorkPanel from '@/components/molecules/WorkPanel';
+import Works from '@/components/organisms/Works';
 import Carousel from '@/components/organisms/Carousel';
 import Select from '@/components/organisms/Select';
 
@@ -15,24 +15,7 @@ import logo from '../public/logo_hero.png';
 import cube from '../public/open_cube.png';
 import styles from './styles.module.scss';
 
-import work1 from '../public/work/work1.png';
-import work2 from '../public/work/work2.png';
-import work3 from '../public/work/work3.png';
-import work4 from '../public/work/work4.png';
-import work5 from '../public/work/work5.png';
-import work6 from '../public/work/work6.png';
-import work7 from '../public/work/work7.png';
 import Threejs from './components/organisms/Motion';
-
-const works = [
-	work1,
-	work2,
-	work3,
-	work4,
-	work5,
-	work6,
-	work7,
-]
 
 const agendaItemsList = [
 	{
@@ -676,13 +659,7 @@ const HomePage = async () => {
 				{/* 歷屆作品 */}
 				<section className="mb-14 md:mb-28" id="works">
 					<SectionTitle titleZh="歷屆作品" titleEn="" />
-					{content?.slice(9, 10).map(({ title_zh, title_en, blocks }) => (
-						<div key={title_zh + title_en}>
-							{blocks?.map(({title, url, description}, idx) => (
-								<WorkPanel title={title} image={works[idx]} url={url} description={description} key={`${title}`} />
-							))}
-						</div>
-					))}
+					<Works />
 				</section >
 
 				{/* 組織成員 */}
