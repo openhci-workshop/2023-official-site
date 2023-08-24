@@ -20,7 +20,7 @@ const aldrich = Aldrich({
 });
 
 const WorkPanel = ({ title, image, url, description, leftFunction, rightFunction }) => (
-  <div className={classnames(styles.blockBackdrop, "flex flex-row w-full items-center px-3 md:px-6")}>
+  <div className={classnames(styles.blockBackdrop, "relative flex flex-row w-full items-center px-3 md:px-6")}>
     <div className={`${styles.button} ${styles.leftButton}`} onClick={() => leftFunction()}>
       <Button iconPath="/speakers/leftvector.png"> </Button>
     </div>
