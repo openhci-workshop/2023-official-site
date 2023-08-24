@@ -656,9 +656,9 @@ const HomePage = async () => {
 					))}
 				</section>
 
-				{/* 歷屆作品 */}
+				{/* 作品成果 */}
 				<section className="mb-14 md:mb-28" id="works">
-					<SectionTitle titleZh="歷屆作品" titleEn="" />
+					<SectionTitle titleZh="作品成果" titleEn="" />
 					<Works />
 				</section >
 

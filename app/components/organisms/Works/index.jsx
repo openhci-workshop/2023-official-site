@@ -115,14 +115,7 @@ const Works = () => {
       <div className="flex flex-row gap-x-4 items-center justify-center mb-4 md:mb-8">
         <div
           onClick={() => handleChangeType(1)}
-          className='
-            hover:text-[#D165B2]
-            hover:underline
-            active:text-[#D165B2]
-            active:underline
-            text-base
-            md:text-lg
-          '
+          className={classnames(`hover:text-[#D165B2] hover:underline active:text-[#D165B2] active:underline ${type === 1 && "text-[#D165B2] font-bold"} text-base md:text-lg`)}
           style={{
             cursor: 'pointer'
           }}
@@ -131,14 +124,7 @@ const Works = () => {
         </div>
         <div
           onClick={() => handleChangeType(0)}
-          className='
-            hover:text-[#D165B2]
-            hover:underline
-            active:text-[#D165B2]
-            active:underline
-            text-base
-            md:text-lg
-          '
+          className={classnames(`hover:text-[#D165B2] hover:underline active:text-[#D165B2] active:underline ${type === 0 && "text-[#D165B2] font-bold"} text-base  md:text-lg`)}
           style={{
             cursor: 'pointer'
           }}
@@ -157,7 +143,7 @@ const Works = () => {
       />
       <div className="flex flex-row gap-x-4 items-center justify-center mt-4 md:mt-8">
         <div>
-          {active+1}/{data[type].length}
+          {active+1} / {data[type].length}
         </div>
       </div>
     </div>
