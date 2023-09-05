@@ -24,11 +24,11 @@ const WorkPanel = ({ title, image, url, description, leftFunction, rightFunction
     <div className={classnames(styles.button)} onClick={() => leftFunction()}>
       <Button iconPath="/speakers/leftvector.png"></Button>
     </div>
-    <div className={classnames("relative w-full flex flex-col md:flex-row px-4 md:px-8 xl:px-24 py-6 md:py-10 xl:py-20")}>
+    <div className={classnames("relative w-full flex flex-col md:flex-row px-4 md:px-6 py-6 md:py-10")}>
       <div className="w-full md:w-2/5 md:mr-14 flex flex-col justify-center">
-        <Image src={image} alt="logo" className="h-auto w-full mb-8 md:mb-0" />
+        <Image src={image} alt="logo" className="h-auto w-full mb-8 md:mb-0 rounded-xl" />
       </div>
-      <div className="w-full md:w-3/5 flex flex-col justify-center">
+      <div className="w-full md:w-3/5 flex flex-col justify-center px-4 md:px-0">
         <a href={url} target="_blank">
           <h2
             className={classnames(
