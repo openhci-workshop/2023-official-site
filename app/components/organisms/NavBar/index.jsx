@@ -32,7 +32,7 @@ const sections = [
   {"y": 3700, "title": "活動資訊"},
   {"y": 6800, "title": "FAQ"},
   {"y": 8800, "title": "作品成果"},
-  {"y": 9600, "title": "組織成員"}
+  {"y": 10000, "title": "組織成員"}
 ]
 
 const NavBar = () => {
