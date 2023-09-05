@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 import classnames from 'classnames';
 import { Noto_Sans_TC, Aldrich } from 'next/font/google';
 import WorkPanel from '@/components/molecules/WorkPanel';
+import BlockTitle from '@/components/molecules/BlockTitle';
+import YouTube from 'react-youtube';
+
+import styles from '../../molecules/WorkPanel/styles.module.scss';
 
 import work1 from '../../../../public/work/work1.png';
 import work2 from '../../../../public/work/work2.png';
@@ -13,9 +17,23 @@ import work5 from '../../../../public/work/work5.png';
 import work6 from '../../../../public/work/work6.png';
 import work7 from '../../../../public/work/work7.png';
 
+import new1 from '../../../../public/work/G1.png';
+import new2 from '../../../../public/work/G2.png';
+import new3 from '../../../../public/work/G3.png';
+import new4 from '../../../../public/work/G4.png';
+import new5 from '../../../../public/work/G5.png';
+import new6 from '../../../../public/work/G6.png';
+import new7 from '../../../../public/work/G7.png';
+
 const imgs = [
   [
-    work1
+    new1,
+    new2,
+    new3,
+    new4,
+    new5,
+    new6,
+    new7,
   ],
 	[
     work1,
@@ -41,9 +59,39 @@ const aldrich = Aldrich({
 const data = [
   [
     {
-      "title": "TBD",
-      "url": "/",
-      "description": "TBD"
+      "title": "SOUNDFIT",
+      "url": "https://youtu.be/iw-RQiP9r-A?si=Zenfq-xRsWPM9T6s",
+      "description": "工作時你會聽爵士樂、Lofi還是K-POP? 你可能會聽著KPOP做無需動腦的工作增加樂趣，當你不經意地開始動腦思考，漸漸地轉換工作狀態時卻發現KPOP變成干擾你思緒的外界資訊？好希望音樂能了解你，跟著你的工作狀態轉換歌曲? 許多研究指出，音樂與我們生理、情感和認知有強烈的連結，對我們的行為和思緒有顯著的影響。SOUNDFIT是耳罩式耳機結合Spotify外掛功能的產品，根據使用者當下的專注度、精神和生理數據，播放最適合當下工作狀態的歌曲，透過「對系統表達工作關鍵的兩種狀態」以及「系統向使用者採取生理數據」的雙向互動，增進人機與彼此的連結，打造前所未見的工作介面與體驗。"
+    },
+    {
+      "title": "Ocean",
+      "url": "https://youtu.be/-fiaPBXgkiQ?si=STF1lcL5oMk7VDjK",
+      "description": "在這個資訊爭奪注意力的時代，你是否曾經禁不起手機震動和螢幕亮起的誘惑頻頻查看通知？就算開啟勿擾模式，你還是會常常看手機怕錯過重要訊息嗎？我們發現目前大學生在線下學習時常常被通知干擾，加上害怕錯過與重要他人的互動所造成的焦慮感，導致學習效率不彰。Ocean是一款結合裝置和App的藝術性產品，動態海浪代表著使用者學習時專注的狀態，而瓶中信則代表了重要聯絡人的訊息通知，不僅改造傳統手機通知呈現，更幫助FOMO大學生找回自己的時間，在資訊汪洋中不再載浮載沉，跟著學習專注航行。Follow me!"
+    },
+    {
+      "title": "Emokit",
+      "url": "https://youtu.be/vLwjWaLDqUc?si=C9MUfvzesdbUHGmG",
+      "description": "「我上班不能碰手機，是要怎麼跟你說^_^？？」Emokit 嘗試以科技輔具協助年輕且忙於工作的情侶克服溝通挑戰。年輕情侶多因爲彼此工作時間落差而產生溝通阻礙，Emokit 透過裝置互相連結，讓伴侶能夠藉由桌上型裝置傳達三種情緒提示給對方，同步彼此狀態，緩解伴侶之間延遲分享造成感情疏離的痛點。Emokit 期盼連結忙碌情侶分享情緒的一面，增加親密關係的幸福感。"
+    },
+    {
+      "title": "ALARM",
+      "url": "https://youtu.be/aD4IThiSyTU?si=d9lXeXpvkZGOyOpB",
+      "description": "「嘿，你有想過當你沉浸在 VR 的世界時，身邊會發生什麼事情嗎？」在虛擬實境快速發展的時代，大多數玩家為了感受與現實的不同，沉浸在虛擬世界的體驗中。但當真實世界發生突發狀況或自然災害時，如何確保安全成為了重要的議題。ALARM 是一款領先的虛擬實境緊急通知系統，專為突發狀況和自然災害而設計。讓您在體驗虛擬世界時，仍能保持與真實世界的連繫，無論是火警、地震或其他緊急狀況。它結合了最新的虛擬實境技術，能夠即時感知周遭環境的變化，並透過視覺、聽覺及觸覺三種感知，將訊息傳遞給使用者。"
+    },
+    {
+      "title": "ImmersiTopia",
+      "url": "https://youtu.be/2pds8jn4gjM?si=eRo_JMMOi4xuOIp-",
+      "description": "First Time? Long Time? 第一次的體驗總是擔心受怕，頻繁的等待總是漫長。常見的數位裝置中，內容讀取／載入多是以進度條呈現，觀看者甚至會分心查看其他事務。然而，隨著虛擬實境日漸興盛，使用者在體驗時往往無法輕易將眼鏡摘下，只能焦躁地看著索然無味的畫面痴痴地等候。「ImmersiTopia」因應而生，我們嘗試塑造VR沉浸式環境。對於初次使用者，期望能減緩陌生及徬徨不安的感受，資深使用者也可轉移等待載入的焦躁情緒，增加正面情緒以讓使用者加快載入的時間感。無論你是初次踏入VR這個世界，還是早已熟悉其中，都能嘗試體驗ImmersiTopia的協助來打發時間。"
+    },
+    {
+      "title": "Toast Mode",
+      "url": "https://youtu.be/5ibimX6iY98?si=T3go5MLuy-5eh2Mo",
+      "description": "你昨天有睡飽嗎？我們透過調查發現年齡介於19至25歲的年輕族群，平均比預期時間晚入睡30至180分鐘，且超過90％的人睡前使用社群媒體。這種拖延的情形可能導致睡眠不足，影響隔日精神狀態，並對健康造成長期影響。Toast Mode以烤吐司機早餐意象重新設計入睡到起床的旅程，透過捕捉早晨的情感與經驗，並將手機作為載體，融入社會意識，建立親友的睡眠習慣連結，為你建打造更健康的睡眠習慣！"
+    },
+    {
+      "title": "Wander in Ｗonder",
+      "url": "https://youtu.be/_F22Qw1quaw?si=mdvMv_nbtC_ERKxt",
+      "description": "轉動把手、齒輪轉動、簧片輕彈、音樂輕輕流瀉⋯⋯，看似直覺的一連串過程，你曾想過中間的過程是如何運作的嗎？Wander in Ｗonder 是一款結合 Reality Rift 概念的手搖式音樂盒，當使用者轉動音樂盒的把手時，會連動金屬圓筒開始轉動，即使圓筒上缺少金屬針，音梳看起來仍被某物所撥動，並發出樂聲。從人對於物理現象的心理模型出發，以移除零件創造出物理現象的斷裂，促發使用者運用想像接起裂隙。"
     },
   ],
   [
@@ -141,9 +189,15 @@ const Works = () => {
         leftFunction={handleLeft}
         rightFunction={handleRight}
       />
-      <div className="flex flex-row gap-x-4 items-center justify-center mt-4 md:mt-8">
+      {/* <div className="flex flex-row gap-x-4 items-center justify-center mt-4 md:mt-8">
         <div>
           {active+1} / {data[type].length}
+        </div>
+      </div> */}
+      <div className={classnames(styles.blockBackdrop, "relative flex flex-col w-full h-fit px-12 py-12 my-8 md:my-16")}>
+        {/* <BlockTitle titleZh={"回顧影片"} titleEn={""} /> */}
+        <div className="h-fit w-full flex flex-row items-center justify-center">
+          <YouTube videoId="f0wmvoEmyag" />
         </div>
       </div>
     </div>
